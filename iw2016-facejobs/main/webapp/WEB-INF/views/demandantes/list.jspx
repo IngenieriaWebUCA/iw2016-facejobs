@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_es_uca_iw_domain_Demandante" items="${demandantes}" z="zusogK/3/podrIJFCilVwIdmWss=">
+        <table:table data="${demandantes}" id="l_es_uca_iw_domain_Demandante" path="/demandantes" z="bA9GUQKnibkxH/PxhzTwHDIysSg=">
+            <table:column id="c_es_uca_iw_domain_Demandante_nombre" property="nombre" z="a+9Kuwo3EJ9lRAnNNGT0IrCVJJw="/>
+            <table:column date="true" dateTimePattern="${demandante_facnac_date_format}" id="c_es_uca_iw_domain_Demandante_facNac" property="facNac" z="BeK0UDe+u+XqJtdRaIwoec+sntw="/>
+            <table:column id="c_es_uca_iw_domain_Demandante_sexo" property="sexo" z="flGJ4FrrvrSj5tJytNUnbLSzJAw="/>
+            <table:column id="c_es_uca_iw_domain_Demandante_direccion" property="direccion" z="hajq+KjqXRTlTXvU9uN/6zfEmDM="/>
+            <table:column id="c_es_uca_iw_domain_Demandante_email" property="email" z="F/2ZODdxMUQgExyDEHXsETozOA4="/>
+            <table:column id="c_es_uca_iw_domain_Demandante_telefono" property="telefono" z="V7d94ty2/e2zokKjENUSdWVg/To="/>
+        </table:table>
+    </page:list>
+</div>

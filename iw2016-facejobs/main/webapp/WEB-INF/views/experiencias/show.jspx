@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_es_uca_iw_domain_Experiencia" object="${experiencia}" path="/experiencias" z="tbjZsfxh6zS9QB9PHTJxJ76VkAM=">
+        <field:display field="idcurriculum" id="s_es_uca_iw_domain_Experiencia_idcurriculum" object="${experiencia}" z="N6bZqCIkPjCCx+5QAuI9ya7PW1E="/>
+        <field:display date="true" dateTimePattern="${experiencia_fecini_date_format}" field="fecini" id="s_es_uca_iw_domain_Experiencia_fecini" object="${experiencia}" z="GUHVjlNCSpyBYTnY3F7Oi4pXZnA="/>
+        <field:display date="true" dateTimePattern="${experiencia_fecfin_date_format}" field="fecfin" id="s_es_uca_iw_domain_Experiencia_fecfin" object="${experiencia}" z="Q59NuLz+UgkD23h006xG/ewhMnY="/>
+        <field:display field="salario" id="s_es_uca_iw_domain_Experiencia_salario" object="${experiencia}" z="n4du4S2IzSGdG5WYeTjCT60dbik="/>
+        <field:display field="tareas" id="s_es_uca_iw_domain_Experiencia_tareas" object="${experiencia}" z="IMIWDuX0roJV8nv3UH4uOwqsSpQ="/>
+        <field:display field="idPuestoExperiencia" id="s_es_uca_iw_domain_Experiencia_idPuestoExperiencia" object="${experiencia}" z="yffRpu2akJhKAdpK7rePxNi4VgI="/>
+    </page:show>
+</div>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_es_uca_iw_domain_Oferta" items="${ofertas}" z="0AwXq9iQWDrn9RgulOudCrZE+hA=">
+        <table:table data="${ofertas}" id="l_es_uca_iw_domain_Oferta" path="/ofertas" z="ESDhsKFcZuxbW9kejPyh99i3w2s=">
+            <table:column id="c_es_uca_iw_domain_Oferta_titulo" property="titulo" z="TbZ2vPw5PEOvGh4bRi1W8f/+B1E="/>
+            <table:column id="c_es_uca_iw_domain_Oferta_infoPuesto" property="infoPuesto" z="fQsKd3FPklPyqluWyj1Z3TYyb0s="/>
+            <table:column id="c_es_uca_iw_domain_Oferta_idFormacion" property="idFormacion" z="Yvj2ZAWgnQjlCVNVeDUM2hPa2zI="/>
+            <table:column id="c_es_uca_iw_domain_Oferta_idSede" property="idSede" z="K1upfAHqJQNTCZDHnxl85tZqoZc="/>
+            <table:column id="c_es_uca_iw_domain_Oferta_tipoContrato" property="tipoContrato" z="cv9oAyHzNcMvZt6FP4ooOb77Rm0="/>
+            <table:column id="c_es_uca_iw_domain_Oferta_salarioBruto" property="salarioBruto" z="jV3WOanDZ7gN/shHMw5yY07eMdo="/>
+        </table:table>
+    </page:list>
+</div>

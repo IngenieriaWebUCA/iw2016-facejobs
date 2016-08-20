@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_es_uca_iw_domain_Inscripcion" items="${inscripcions}" z="g9iZ8uAzjzyZTnfFsAOQtkM42Qc=">
+        <table:table data="${inscripcions}" id="l_es_uca_iw_domain_Inscripcion" path="/inscripcions" z="eh5BRcIiEnkcPC9xkUUjjcOJdHc=">
+            <table:column id="c_es_uca_iw_domain_Inscripcion_idoferta" property="idoferta" z="QCGg+Yr1NxAwvX4aNFrBU1WtfdA="/>
+            <table:column id="c_es_uca_iw_domain_Inscripcion_estado" property="estado" z="CDqWi4qQJ1WSzA0qO4uHmIw4mvc="/>
+            <table:column id="c_es_uca_iw_domain_Inscripcion_idDemandante" property="idDemandante" z="Pnn9vpamG680F3ILMlEeJopSnfQ="/>
+            <table:column id="c_es_uca_iw_domain_Inscripcion_idOferta" property="idOferta" z="d76hsDk/rjOE9ixI50jpbIpDwRI="/>
+        </table:table>
+    </page:list>
+</div>

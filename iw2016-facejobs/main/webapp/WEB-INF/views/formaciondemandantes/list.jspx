@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_es_uca_iw_domain_Formaciondemandante" items="${formaciondemandantes}" z="ACNyupfI8urLkA3Iq6BUmjBd0uI=">
+        <table:table data="${formaciondemandantes}" id="l_es_uca_iw_domain_Formaciondemandante" path="/formaciondemandantes" z="WtC/oNtca6gqPUANDJe2ZmOx0NA=">
+            <table:column id="c_es_uca_iw_domain_Formaciondemandante_idFormacionDemandanteCentro" property="idFormacionDemandanteCentro" z="sgtDurZD6XiDSn7AaO2iIVwVX4k="/>
+            <table:column id="c_es_uca_iw_domain_Formaciondemandante_idFormacionDemandanteFormacion" property="idFormacionDemandanteFormacion" z="LrvHZSrU02+CtT93b2T+ofj19Po="/>
+            <table:column id="c_es_uca_iw_domain_Formaciondemandante_idFormacionDemandanteDemandante" property="idFormacionDemandanteDemandante" z="ZDGdsgLHKBslGgA3KCOqd5MVIwQ="/>
+        </table:table>
+    </page:list>
+</div>
