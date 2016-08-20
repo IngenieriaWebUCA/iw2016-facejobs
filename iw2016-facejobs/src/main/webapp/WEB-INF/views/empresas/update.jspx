@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_es_uca_iw_domain_Empresa" modelAttribute="empresa" path="/empresas" versionField="Version" z="fJN+MoudpKC4mS8rYd85ZtBhxFg=">
+        <field:input field="nombre" id="c_es_uca_iw_domain_Empresa_nombre" z="cW97QgbhU41r/6kKbxhutLX7vh4="/>
+        <field:input field="cif" id="c_es_uca_iw_domain_Empresa_cif" z="OWmsqf53uPxGqp4gMvNClWOf6qM="/>
+        <field:input field="email" id="c_es_uca_iw_domain_Empresa_email" validationMessageCode="field_invalid_email" z="dY80NssvQPKqsFSFo+Go9RdGNU0="/>
+        <field:input field="actProf" id="c_es_uca_iw_domain_Empresa_actProf" z="2eEsUkKpziApjhIaAS4cIalPL2o="/>
+        <field:input field="numEmp" id="c_es_uca_iw_domain_Empresa_numEmp" validationMessageCode="field_invalid_integer" z="mlMOKVJWYxYAr5Nsx8m7FqMUZpw="/>
+        <field:select field="idusuarioEmp" id="c_es_uca_iw_domain_Empresa_idusuarioEmp" itemValue="id_" items="${usuarios}" path="/usuarios" z="89l2BCu9Ykzf57t6CC1bCfZGXB0="/>
+    </form:update>
+</div>

@@ -1,0 +1,134 @@
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-08-20 12:40:30
+project --topLevelPackage es.uca.iw --projectName iw2016-facejobs --java 6 --packaging WAR
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-08-20 12:40:31
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-08-20 12:40:35
+jpa setup --provider HIBERNATE --database MYSQL 
+// [failed] entity jpa --class ~.domain.centro
+// [failed] field number --fieldName id --type java.lang.Integer --notNull --class ~.domain.centro
+// [failed] entity jpa --class ~.domain.centro
+// [failed] field number --fieldName id --type java.lang.Integer --notNull --class ~.domain.Centro
+// [failed] field number --fieldName id --type java.lang.Integer --notNull --class ~.domain.centro
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-08-20 12:53:43
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-08-20 12:54:06
+jpa setup --provider HIBERNATE --database MYSQL 
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-08-20 12:54:44
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-08-20 12:55:15
+entity jpa --class ~.domain.centro
+field number --fieldName id --type java.lang.Integer --notNull --class ~.domain.centro
+field string --fieldName nombre --class ~.domain.centro
+finder add --finderName findId --class ~.domain.centro
+finder add --finderName findIdLike --class ~.domain.centro
+web mvc setup
+
+web mvc all --package ~.web
+
+entity jpa --class ~.domain.empresa
+field number --fieldName id --type java.lang.Integer --notNull --class ~.domain.empresa
+field string --fieldName nombre --class ~.domain.empresa
+field string --fieldName cif --class ~.domain.empresa
+field string --fieldName email --class ~.domain.empresa
+// [failed] field string --fieldName email --class ~.domain.empresa
+field string --fieldName actProf --class ~.domain.empresa
+field number --fieldName numEmp --type java.lang.Integer --class ~.domain.empresa
+field number --fieldName idUsuario --type java.lang.Integer --class ~.domain.empresa
+web mvc all --package ~.web
+entity jpa --class ~.domain.usuario
+field number --fieldName id --type java.lang.Integer --notNull --class ~.domain.usuario
+field string --fieldName login --class ~.domain.usuario
+field string --fieldName password --class ~.domain.usuario
+field number --fieldName tipo --type java.lang.Integer --class ~.domain.usuario
+web mvc all --package ~.web
+entity jpa --class ~.domain.demandante
+field number --fieldName id --type java.lang.Integer --notNull --class ~.domain.demandante
+field string --fieldName nombre --class ~.domain.demandante
+field date --fieldName facNac --type java.util.Date --class ~.domain.demandante
+field number --fieldName sexo --type java.lang.Integer --class ~.domain.demandante
+field string --fieldName direccion --class ~.domain.demandante
+field string --fieldName email --class ~.domain.demandante
+field string --fieldName telefono --class ~.domain.demandante
+field number --fieldName idusuario --type java.lang.Integer --class ~.domain.demandante
+field string --fieldName resumenTray --class ~.domain.demandante
+field string --fieldName foto --class ~.domain.demandante
+field string --fieldName trabajosDisp --class ~.domain.demandante
+field string --fieldName experiencia --class ~.domain.demandante
+web mvc all --package ~.web
+entity jpa --class ~.domain.inscripcion
+field number --fieldName idcurriculum --type java.lang.Integer --notNull --class ~.domain.inscripcion
+field number --fieldName idoferta --type java.lang.Integer --notNull --class ~.domain.inscripcion
+field number --fieldName estado --type java.lang.Integer --notNull --class ~.domain.inscripcion
+web mvc all --package ~.web
+entity jpa --class ~.domain.sede
+field number --fieldName id --type java.lang.Integer --notNull --class ~.domain.sede
+field string --fieldName nombre --class ~.domain.sede
+field number --fieldName idempresa --type java.lang.Integer --notNull --class ~.domain.sede
+field string --fieldName ciudad --class ~.domain.sede
+web mvc all --package ~.web
+entity jpa --class ~.domain.puesto
+field number --fieldName iddemandante --type java.lang.Integer --notNull --class ~.domain.puesto
+field number --fieldName idexperiencia --type java.lang.Integer --notNull --class ~.domain.puesto
+field number --fieldName idoferta --type java.lang.Integer --notNull --class ~.domain.puesto
+web mvc all --package ~.web
+entity jpa --class ~.domain.experiencia
+field number --fieldName id --type java.lang.Integer --notNull --class ~.domain.experiencia
+field number --fieldName idcurriculum --type java.lang.Integer --notNull --class ~.domain.experiencia
+field date --fieldName fecini --type java.util.Date --class ~.domain.experiencia
+field date --fieldName fecfin --type java.util.Date --class ~.domain.experiencia
+field number --fieldName salario --type java.lang.Integer --class ~.domain.experiencia
+field string --fieldName tareas --class ~.domain.experiencia
+web mvc all --package ~.web
+// [failed] field number --fieldName id --type java.lang.Integer --notNull --class ~.domain.oferta
+entity jpa --class ~.domain.oferta
+field number --fieldName id --type java.lang.Integer --notNull --class ~.domain.oferta
+field string --fieldName titulo --class ~.domain.oferta
+field string --fieldName infoPuesto --class ~.domain.oferta
+field number --fieldName idFormacion --type java.lang.Integer --class ~.domain.oferta
+field number --fieldName idSede --type java.lang.Integer --class ~.domain.oferta
+field number --fieldName tipoContrato --type java.lang.Integer --class ~.domain.oferta
+field number --fieldName salarioBruto --type java.lang.Integer --class ~.domain.oferta
+field date --fieldName fechaInc --type java.util.Date --class ~.domain.oferta
+field number --fieldName numVac --type java.lang.Integer --class ~.domain.oferta
+field string --fieldName perfilDem --class ~.domain.oferta
+field date --fieldName fecIniOferta --type java.util.Date --class ~.domain.oferta
+field date --fieldName fecFinOferta --type java.util.Date --class ~.domain.oferta
+field number --fieldName estado --type java.lang.Integer --class ~.domain.oferta
+web mvc all --package ~.web
+entity jpa --class ~.domain.tipoformacion
+field number --fieldName id --type java.lang.Integer --notNull --class ~.domain.tipoformacion
+field string --fieldName nombre --class ~.domain.tipoformacion
+web mvc all --package ~.web
+entity jpa --class ~.domain.formaciondemandante
+field number --fieldName idformacion --type java.lang.Integer --notNull --class ~.domain.formaciondemandante
+field number --fieldName idcurriculum --type java.lang.Integer --notNull --class ~.domain.formaciondemandante
+field number --fieldName idcentro --type java.lang.Integer --notNull --class ~.domain.formaciondemandante
+web mvc all --package ~.web
+entity jpa --class ~.domain.formacion
+field number --fieldName id --type java.lang.Integer --notNull --class ~.domain.formacion
+field number --fieldName idTipoFormacion --type java.lang.Integer --notNull --class ~.domain.formacion
+field number --fieldName titulacion --type java.lang.Integer --class ~.domain.formacion
+field string --fieldName nivel --class ~.domain.formacion
+web mvc all --package ~.web
+field reference --fieldName idusuarioDem --type ~.domain.usuario --class ~.domain.demandante
+field reference --fieldName idusuarioEmp --type ~.domain.usuario --class ~.domain.empresa
+field reference --fieldName idDemandante --type ~.domain.demandante --class ~.domain.inscripcion
+field reference --fieldName idOferta --type ~.domain.oferta --class ~.domain.inscripcion
+// [failed] field reference --fieldName idEmpresa --type ~.domain.empresa --class ~.domain.sede --cardinality ONE_TO_MANY
+field reference --fieldName idEmpresa --type ~.domain.empresa --class ~.domain.sede --cardinality MANY_TO_ONE
+// [failed] field reference --fieldName idSede --type ~.domain.sede --class ~.domain.oferta --cardinality MANY_TO_ONE
+field reference --fieldName idSedeOferta --type ~.domain.sede --class ~.domain.oferta --cardinality MANY_TO_ONE
+field reference --fieldName idInscripcionOferta --type ~.domain.inscripcion --class ~.domain.oferta --cardinality MANY_TO_ONE
+field reference --fieldName idInscripcionDemandante --type ~.domain.inscripcion --class ~.domain.demandante --cardinality MANY_TO_ONE
+field reference --fieldName idExperienciaDemandante --type ~.domain.demandante --class ~.domain.demandante --cardinality MANY_TO_ONE
+// [failed] field reference --fieldName idFormacionDemandanteFormacion --type ~.domain.formaciondemandante --class ~.domain.formacion --cardinality MANY_TO_MANY
+// [failed] field reference --fieldName idFormacionTipoFormacion --type ~.domain.formacion --class ~.domain.tipoFormacion --cardinality MANY_TO_ONE
+field reference --fieldName idFormacionTipoFormacion --type ~.domain.formacion --class ~.domain.tipoformacion --cardinality MANY_TO_ONE
+field reference --fieldName idOfertaFormacion --type ~.domain.oferta --class ~.domain.formacion --cardinality MANY_TO_ONE
+web mvc all --package ~.web
+field reference --fieldName idPuestoOferta --type ~.domain.puesto --class ~.domain.oferta --cardinality MANY_TO_ONE
+field reference --fieldName idPuestoDemandante --type ~.domain.puesto --class ~.domain.demandante --cardinality MANY_TO_ONE
+field reference --fieldName idPuestoExperiencia --type ~.domain.puesto --class ~.domain.experiencia --cardinality MANY_TO_ONE
+// [failed] field reference --fieldName idFormacionDemandanteFormacion --type ~.domain.formaciondemandante --class ~.domain.formacion --cardinality MANY_TO_MANY
+field reference --fieldName idFormacionDemandanteFormacion --type ~.domain.formaciondemandante --class ~.domain.formacion --cardinality MANY_TO_ONE
+field reference --fieldName idFormacionDemandanteDemandante --type ~.domain.formaciondemandante --class ~.domain.demandante --cardinality MANY_TO_ONE
+field reference --fieldName idFormacionDemandanteCentro --type ~.domain.formaciondemandante --class ~.domain.centro --cardinality MANY_TO_ONE
+// [failed] field reference --fieldName idPuestoOferta --type ~.domain.puesto --class ~.domain.oferta --cardinality MANY_TO_ONE
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-08-20 20:52:13

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_es_uca_iw_domain_Experiencia" items="${experiencias}" z="nl63+cO8FVsJCJJmYq9LNEoXU9w=">
+        <table:table data="${experiencias}" id="l_es_uca_iw_domain_Experiencia" path="/experiencias" z="bgTY2H0HuVoSsUNGm/34w2mZQbY=">
+            <table:column id="c_es_uca_iw_domain_Experiencia_idcurriculum" property="idcurriculum" z="NU8PWSWlJcwo9X2B5Yn1p24uhUw="/>
+            <table:column date="true" dateTimePattern="${experiencia_fecini_date_format}" id="c_es_uca_iw_domain_Experiencia_fecini" property="fecini" z="R88dlInnM4FYGP0pcV9Pgj2szEA="/>
+            <table:column date="true" dateTimePattern="${experiencia_fecfin_date_format}" id="c_es_uca_iw_domain_Experiencia_fecfin" property="fecfin" z="607A/suelUU7MxQoADh8hKTe5BI="/>
+            <table:column id="c_es_uca_iw_domain_Experiencia_salario" property="salario" z="exjMiQOi2spyeivyHOokY7bB9N4="/>
+            <table:column id="c_es_uca_iw_domain_Experiencia_tareas" property="tareas" z="4aar+WA9AZ3asbTutzuXRCZ/Gis="/>
+            <table:column id="c_es_uca_iw_domain_Experiencia_idPuestoExperiencia" property="idPuestoExperiencia" z="CQoHgo/9HPXxv8eHfWbkN1L3OHk="/>
+        </table:table>
+    </page:list>
+</div>

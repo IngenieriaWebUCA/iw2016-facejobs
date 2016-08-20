@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_es_uca_iw_domain_Demandante" object="${demandante}" path="/demandantes" z="u3Kvm0BOX6UH+2eQRLO+9uxABeo=">
+        <field:display field="nombre" id="s_es_uca_iw_domain_Demandante_nombre" object="${demandante}" z="qHCaRlvylVnRNuuOXSQJDf0EbBQ="/>
+        <field:display date="true" dateTimePattern="${demandante_facnac_date_format}" field="facNac" id="s_es_uca_iw_domain_Demandante_facNac" object="${demandante}" z="6PYOywZ7G7SKKmVjAsHxK72YVkM="/>
+        <field:display field="sexo" id="s_es_uca_iw_domain_Demandante_sexo" object="${demandante}" z="0vHyw6aA2BxlhCEvo0jyPAbQESE="/>
+        <field:display field="direccion" id="s_es_uca_iw_domain_Demandante_direccion" object="${demandante}" z="q/4cqkT27AxeehDvxkvvwq99r+k="/>
+        <field:display field="email" id="s_es_uca_iw_domain_Demandante_email" object="${demandante}" z="otplh++eiRw0RN753LYQMd39Mlc="/>
+        <field:display field="telefono" id="s_es_uca_iw_domain_Demandante_telefono" object="${demandante}" z="XvHCKUs6tc1tP0iXTAFMxC8u6D8="/>
+        <field:display field="idusuario" id="s_es_uca_iw_domain_Demandante_idusuario" object="${demandante}" z="r8hlgH7kLqOM4sNYtyvUW6EmAvQ="/>
+        <field:display field="resumenTray" id="s_es_uca_iw_domain_Demandante_resumenTray" object="${demandante}" z="yMxR6hCeomjE9yUtXOZYX3KgS5c="/>
+        <field:display field="foto" id="s_es_uca_iw_domain_Demandante_foto" object="${demandante}" z="zKE7vDOJe9GABObnb8NSJXi+FkM="/>
+        <field:display field="trabajosDisp" id="s_es_uca_iw_domain_Demandante_trabajosDisp" object="${demandante}" z="h/KwZ4itDeQx6Fk0MFdLVw9y9z4="/>
+        <field:display field="experiencia" id="s_es_uca_iw_domain_Demandante_experiencia" object="${demandante}" z="iuoNhXWoFpv2gdeUN0zWJAd2OUQ="/>
+        <field:display field="idusuarioDem" id="s_es_uca_iw_domain_Demandante_idusuarioDem" object="${demandante}" z="8XCBzePCqBudI9uTMFbDSibH/l0="/>
+        <field:display field="idInscripcionDemandante" id="s_es_uca_iw_domain_Demandante_idInscripcionDemandante" object="${demandante}" z="miA0x3GJVtNMi92KdFZvUQm/QdE="/>
+        <field:display field="idExperienciaDemandante" id="s_es_uca_iw_domain_Demandante_idExperienciaDemandante" object="${demandante}" z="LW+Lm89oRvTEUnO+mo/9XpW9ZhE="/>
+        <field:display field="idPuestoDemandante" id="s_es_uca_iw_domain_Demandante_idPuestoDemandante" object="${demandante}" z="GFGwepbzTRshUPsvwcWxOtDtKWM="/>
+        <field:display field="idFormacionDemandanteDemandante" id="s_es_uca_iw_domain_Demandante_idFormacionDemandanteDemandante" object="${demandante}" z="Ok5cEhMQjJ+TpQi3GzOFcP73Yl4="/>
+    </page:show>
+</div>
