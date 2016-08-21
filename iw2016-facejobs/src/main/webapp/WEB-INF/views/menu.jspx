@@ -10,6 +10,7 @@
         <menu:category id="c_empresa" z="Xy2UIEQBwGL74OghlgyDNqDXG44=">
             <menu:item id="i_empresa_new" messageCode="global_menu_new" url="/empresas?form" z="TBXez8QM+aB2tzcjHN1lQJYrewc="/>
             <menu:item id="i_empresa_list" messageCode="global_menu_list" url="/empresas?page=1&amp;size=${empty param.size ? 10 : param.size}" z="/YQYlSdehDz3lrOGSSpWZYe++Zk="/>
+            <menu:item id="fi_empresa_nombrelike" messageCode="global_menu_find" url="/empresas?find=ByNombreLike&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="mTef6SZATZz4E7oTkQLHahHOWOc="/>
         </menu:category>
         <menu:category id="c_usuario" z="g6oG0656PcsmmvUYeBtpgiQROck=">
             <menu:item id="i_usuario_new" messageCode="global_menu_new" url="/usuarios?form" z="RG1gCsiZQjg1HLDzXbHKht6yDkw="/>
@@ -18,6 +19,7 @@
         <menu:category id="c_demandante" z="ap7hcwTTE7QpwHyV1OnSKrPHdQc=">
             <menu:item id="i_demandante_new" messageCode="global_menu_new" url="/demandantes?form" z="8+S2ulD0VSXmoyyhDfXJ+CNxgh8="/>
             <menu:item id="i_demandante_list" messageCode="global_menu_list" url="/demandantes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="1MtvqFaAsZmIa4hZR8pApwIOdDY="/>
+            <menu:item id="fi_demandante_trabajosdisp" messageCode="global_menu_find" url="/demandantes?find=ByTrabajosDisp&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="TpU2bXNz46cfithew1Xuf8BicXw="/>
         </menu:category>
         <menu:category id="c_inscripcion" z="WGH6UGn8Xk1BCQvYxOLO3zhO32w=">
             <menu:item id="i_inscripcion_new" messageCode="global_menu_new" url="/inscripcions?form" z="c/fKPa6XZ8IWr+NnUZsDmwBVAoo="/>
@@ -38,6 +40,11 @@
         <menu:category id="c_oferta" z="hAFpA26H1SoEOzHx9qIuh9xoiFY=">
             <menu:item id="i_oferta_new" messageCode="global_menu_new" url="/ofertas?form" z="XL2la3mMU88KBAljrX+q6go8ogw="/>
             <menu:item id="i_oferta_list" messageCode="global_menu_list" url="/ofertas?page=1&amp;size=${empty param.size ? 10 : param.size}" z="YFpuok8se1icruycVP1Ngny6x3c="/>
+            <menu:item id="fi_oferta_estado" messageCode="global_menu_find" url="/ofertas?find=ByEstado&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="zm1TgkQaCA7A5vmrF3bq/uOkkrA="/>
+            <menu:item id="fi_oferta_idsede" messageCode="global_menu_find" url="/ofertas?find=ByIdSede&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="J32/dLJ7Elf2fgrJr9bPCWTaSn4="/>
+            <menu:item id="fi_oferta_tipocontrato" messageCode="global_menu_find" url="/ofertas?find=ByTipoContrato&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="lOcC472oV51yDyxQ+lNlw8dzDy0="/>
+            <menu:item id="fi_oferta_titulo" messageCode="global_menu_find" url="/ofertas?find=ByTitulo&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="lCEY0XIU9CKr5bqiTXVyWrcx72M="/>
+            <menu:item id="fi_oferta_titulolike" messageCode="global_menu_find" url="/ofertas?find=ByTituloLike&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="OCVVu6QcnDsYEARmZvNZoALbZUE="/>
         </menu:category>
         <menu:category id="c_tipoformacion" z="93W0FQt/d1F/U3EaB2bV+s0bwjs=">
             <menu:item id="i_tipoformacion_new" messageCode="global_menu_new" url="/tipoformacions?form" z="HZO3NxOfMQRShRoIXHqW8awz+G8="/>

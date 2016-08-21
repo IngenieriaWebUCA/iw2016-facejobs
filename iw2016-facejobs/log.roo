@@ -139,3 +139,16 @@ web mvc all --package ~.web
 
 web mvc language --code en
 web mvc language --code es
+finder add --finderName findOfertasByEstado --class ~.domain.oferta
+web mvc finder all
+finder add --finderName findOfertasBySede --class ~.domain.oferta
+finder add --finderName findOfertasByidSede --class ~.domain.oferta
+finder add --finderName findOfertasByIdSede --class ~.domain.oferta
+finder add --finderName findOfertasByTipoContrato --class ~.domain.oferta
+finder add --finderName findOfertasByTitulo --class ~.domain.oferta
+finder add --finderName findOfertasBySede --class ~.domain.oferta
+finder add --finderName findOfertasByTituloLike --class ~.domain.oferta
+finder add --finderName findEmpresasByNombreLike --class ~.domain.empresa
+finder add --finderName findPerfilsByTrabajosDisp --class ~.domain.demandante
+finder add --finderName findDemandantesByTrabajosDisp --class ~.domain.demandante
+web mvc finder all

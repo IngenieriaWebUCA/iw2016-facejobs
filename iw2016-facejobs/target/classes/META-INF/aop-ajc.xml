@@ -27,6 +27,7 @@
 <aspect name="es.uca.iw.web.ExperienciaController_Roo_Controller"/>
 <aspect name="es.uca.iw.web.FormaciondemandanteController_Roo_Controller"/>
 <aspect name="es.uca.iw.domain.Inscripcion_Roo_Jpa_ActiveRecord"/>
+<aspect name="es.uca.iw.domain.Demandante_Roo_Finder"/>
 <aspect name="es.uca.iw.domain.Sede_Roo_Jpa_ActiveRecord"/>
 <aspect name="es.uca.iw.domain.Centro_Roo_Jpa_Entity"/>
 <aspect name="es.uca.iw.domain.Demandante_Roo_Jpa_ActiveRecord"/>
@@ -37,6 +38,7 @@
 <aspect name="es.uca.iw.domain.Formacion_Roo_Jpa_Entity"/>
 <aspect name="es.uca.iw.domain.Tipoformacion_Roo_Jpa_Entity"/>
 <aspect name="es.uca.iw.web.CentroController_Roo_Controller"/>
+<aspect name="es.uca.iw.web.OfertaController_Roo_Controller_Finder"/>
 <aspect name="es.uca.iw.domain.Oferta_Roo_Jpa_ActiveRecord"/>
 <aspect name="es.uca.iw.domain.Oferta_Roo_JavaBean"/>
 <aspect name="es.uca.iw.domain.Inscripcion_Roo_JavaBean"/>
@@ -47,6 +49,7 @@
 <aspect name="es.uca.iw.domain.Experiencia_Roo_ToString"/>
 <aspect name="es.uca.iw.domain.Formaciondemandante_Roo_Jpa_Entity"/>
 <aspect name="es.uca.iw.domain.Experiencia_Roo_Jpa_ActiveRecord"/>
+<aspect name="es.uca.iw.web.DemandanteController_Roo_Controller_Finder"/>
 <aspect name="es.uca.iw.domain.Usuario_Roo_JavaBean"/>
 <aspect name="es.uca.iw.domain.Sede_Roo_ToString"/>
 <aspect name="es.uca.iw.domain.Oferta_Roo_Jpa_Entity"/>
@@ -55,16 +58,19 @@
 <aspect name="es.uca.iw.domain.Formaciondemandante_Roo_Jpa_ActiveRecord"/>
 <aspect name="es.uca.iw.domain.Puesto_Roo_ToString"/>
 <aspect name="es.uca.iw.domain.Formacion_Roo_ToString"/>
+<aspect name="es.uca.iw.web.EmpresaController_Roo_Controller_Finder"/>
 <aspect name="es.uca.iw.domain.Tipoformacion_Roo_JavaBean"/>
 <aspect name="es.uca.iw.domain.Demandante_Roo_Configurable"/>
 <aspect name="es.uca.iw.domain.Demandante_Roo_ToString"/>
 <aspect name="es.uca.iw.domain.Experiencia_Roo_Configurable"/>
+<aspect name="es.uca.iw.domain.Oferta_Roo_Finder"/>
 <aspect name="es.uca.iw.domain.Experiencia_Roo_JavaBean"/>
 <aspect name="es.uca.iw.domain.Experiencia_Roo_Jpa_Entity"/>
 <aspect name="es.uca.iw.domain.Puesto_Roo_Jpa_Entity"/>
 <aspect name="es.uca.iw.domain.Usuario_Roo_ToString"/>
 <aspect name="es.uca.iw.domain.Empresa_Roo_JavaBean"/>
 <aspect name="es.uca.iw.domain.Formaciondemandante_Roo_ToString"/>
+<aspect name="es.uca.iw.domain.Empresa_Roo_Finder"/>
 <aspect name="es.uca.iw.domain.Empresa_Roo_Jpa_Entity"/>
 <aspect name="es.uca.iw.domain.Inscripcion_Roo_ToString"/>
 <aspect name="es.uca.iw.web.TipoformacionController_Roo_Controller"/>

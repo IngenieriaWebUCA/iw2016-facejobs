@@ -13,4 +13,7 @@
 <definition extends="default" name="empresas/update">
         <put-attribute name="body" value="/WEB-INF/views/empresas/update.jspx"/>
     </definition>
+<definition extends="default" name="empresas/findEmpresasByNombreLike">
+        <put-attribute name="body" value="/WEB-INF/views/empresas/findEmpresasByNombreLike.jspx"/>
+    </definition>
 </tiles-definitions>

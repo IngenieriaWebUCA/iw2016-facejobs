@@ -13,4 +13,19 @@
 <definition extends="default" name="ofertas/update">
         <put-attribute name="body" value="/WEB-INF/views/ofertas/update.jspx"/>
     </definition>
+<definition extends="default" name="ofertas/findOfertasByEstado">
+        <put-attribute name="body" value="/WEB-INF/views/ofertas/findOfertasByEstado.jspx"/>
+    </definition>
+<definition extends="default" name="ofertas/findOfertasByIdSede">
+        <put-attribute name="body" value="/WEB-INF/views/ofertas/findOfertasByIdSede.jspx"/>
+    </definition>
+<definition extends="default" name="ofertas/findOfertasByTipoContrato">
+        <put-attribute name="body" value="/WEB-INF/views/ofertas/findOfertasByTipoContrato.jspx"/>
+    </definition>
+<definition extends="default" name="ofertas/findOfertasByTitulo">
+        <put-attribute name="body" value="/WEB-INF/views/ofertas/findOfertasByTitulo.jspx"/>
+    </definition>
+<definition extends="default" name="ofertas/findOfertasByTituloLike">
+        <put-attribute name="body" value="/WEB-INF/views/ofertas/findOfertasByTituloLike.jspx"/>
+    </definition>
 </tiles-definitions>
