@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_es_uca_iw_domain_Inscripcion" object="${inscripcion}" path="/inscripcions" z="7y8SAvOoAZsvp6CuxRw2p7dHpF0=">
+        <field:display field="idoferta" id="s_es_uca_iw_domain_Inscripcion_idoferta" object="${inscripcion}" z="A/9K3sRlmLTGyAbKyQxPNWg3uzY="/>
+        <field:display field="estado" id="s_es_uca_iw_domain_Inscripcion_estado" object="${inscripcion}" z="ArsU8lL7mUw9yFk8SshD+RYAZ+k="/>
+        <field:display field="idDemandante" id="s_es_uca_iw_domain_Inscripcion_idDemandante" object="${inscripcion}" z="vCoVZ5k3dMl6UKrMB2qEZBsBsxM="/>
+        <field:display field="idOferta" id="s_es_uca_iw_domain_Inscripcion_idOferta" object="${inscripcion}" z="DPS6TelxsfrTYwHexx1ZxX/w5fo="/>
+    </page:show>
+</div>

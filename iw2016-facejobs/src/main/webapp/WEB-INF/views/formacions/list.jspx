@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_es_uca_iw_domain_Formacion" items="${formacions}" z="HS9nxgu7f0vGe8FOevEQ1lq/QSc=">
+        <table:table data="${formacions}" id="l_es_uca_iw_domain_Formacion" path="/formacions" z="6bkHuwFxygHGlyZtTGcjItUGyo4=">
+            <table:column id="c_es_uca_iw_domain_Formacion_idTipoFormacion" property="idTipoFormacion" z="YuWj0MTuExXff0e3kqjKYdD9fdc="/>
+            <table:column id="c_es_uca_iw_domain_Formacion_titulacion" property="titulacion" z="0h/D+MfIdhUAKVdqjmBS6Lf6wz4="/>
+            <table:column id="c_es_uca_iw_domain_Formacion_nivel" property="nivel" z="Pod/2fQyvh/TnGp8ivBcSkw2t6w="/>
+            <table:column id="c_es_uca_iw_domain_Formacion_idOfertaFormacion" property="idOfertaFormacion" z="sITHvjbXMpBwOqDREbHIL/haAew="/>
+            <table:column id="c_es_uca_iw_domain_Formacion_idFormacionDemandanteFormacion" property="idFormacionDemandanteFormacion" z="5Mit9gDkVqaTNmT5Hl8odzLsG/M="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="formaciondemandantes/list">
+        <put-attribute name="body" value="/WEB-INF/views/formaciondemandantes/list.jspx"/>
+    </definition>
+<definition extends="default" name="formaciondemandantes/show">
+        <put-attribute name="body" value="/WEB-INF/views/formaciondemandantes/show.jspx"/>
+    </definition>
+<definition extends="default" name="formaciondemandantes/create">
+        <put-attribute name="body" value="/WEB-INF/views/formaciondemandantes/create.jspx"/>
+    </definition>
+<definition extends="default" name="formaciondemandantes/update">
+        <put-attribute name="body" value="/WEB-INF/views/formaciondemandantes/update.jspx"/>
+    </definition>
+</tiles-definitions>

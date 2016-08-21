@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security" 
+    xmlns:beans="http://www.springframework.org/schema/beans" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.2.xsd">
+    <!-- HTTP security configurations -->
+    <http auto-config="true" use-expressions="true">
+        <form-login login-processing-url="/resources/j_spring_security_check" login-page="/login" authentication-failure-url="/login?login_error=t" />
+        <logout logout-url="/resources/j_spring_security_logout" />
+        <!-- Configure these elements to secure URIs in your application -->
+        <intercept-url pattern="/choices/**" access="hasRole('ROLE_ADMIN')" />
+        <intercept-url pattern="/member/**" access="isAuthenticated()" />
+        <intercept-url pattern="/resources/**" access="permitAll" />
+        <intercept-url pattern="/login/**" access="permitAll" />
+        <intercept-url pattern="/centroes/**" access="hasRole('ROLE_ADMIN')" />
+        <intercept-url pattern="/tipoformacions/**" access="hasRole('ROLE_ADMIN')" />
+        <intercept-url pattern="/formacions/**" access="hasRole('ROLE_ADMIN')" />
+        <intercept-url pattern="/empresas/**" access="hasRole('ROLE_EMPRESA')" />
+        <intercept-url pattern="/sedes/**" access="hasRole('ROLE_EMPRESA')" />
+        <intercept-url pattern="/formaciondemandantes/**" access="hasRole('ROLE_DEMANDANTE')" />
+        <intercept-url pattern="/demandantes/**" access="hasRole('ROLE_DEMANDANTE')" />
+        <intercept-url pattern="/experiencias/**" access="hasRole('ROLE_DEMANDANTE')" />
+        <intercept-url pattern="/puestoes/**" access="hasRole('ROLE_DEMANDANTE')" />
+        <intercept-url pattern="/inscripcions/**" access="hasRole('ROLE_DEMANDANTE')" />
+        <intercept-url pattern="/**" access="isAuthenticated()" />
+    </http>
+    <!-- Configure Authentication mechanism -->
+    <authentication-manager alias="authenticationManager">
+        <!-- SHA-256 values can be produced using 'echo -n your_desired_password | sha256sum' (using normal *nix environments) -->
+        <authentication-provider>
+            <password-encoder hash="sha-256" />
+            <user-service>
+            	<!-- admin / facejobs -->
+                <user name="admin" password="98a2ba32c190a87944e32006316e05b80b82a74c79946b447da98c9951c9e78d" authorities="ROLE_ADMIN" />                
+            	<!-- dem / dem -->
+                <user name="dem" password="5bd1269b11fc4c7c128e36854805a009bde2de968bbe5ddf287cab7bdb1bd6d8" authorities="ROLE_DEMANDANTE" />                
+            	<!-- emp / emp -->
+                <user name="emp" password="9d586dc0a48a2ed04839e0a69750893438e8d379e2fa45e94e82c5b3abb00daa" authorities="ROLE_EMPRESA" />
+            </user-service>
+        </authentication-provider>
+    </authentication-manager>
+</beans:beans>

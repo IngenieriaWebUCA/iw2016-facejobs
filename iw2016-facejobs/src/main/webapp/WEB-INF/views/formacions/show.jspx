@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_es_uca_iw_domain_Formacion" object="${formacion}" path="/formacions" z="wE8jW5PFg2LJJA9VVIeM4IcgTig=">
+        <field:display field="idTipoFormacion" id="s_es_uca_iw_domain_Formacion_idTipoFormacion" object="${formacion}" z="eACKUuKHhkchnEmp9E60EAO/IoQ="/>
+        <field:display field="titulacion" id="s_es_uca_iw_domain_Formacion_titulacion" object="${formacion}" z="0I4LFF+Q2YS22rXx6XLGevJjHXg="/>
+        <field:display field="nivel" id="s_es_uca_iw_domain_Formacion_nivel" object="${formacion}" z="Ww1THoMs9M2ugR3u1THgsIdLI88="/>
+        <field:display field="idOfertaFormacion" id="s_es_uca_iw_domain_Formacion_idOfertaFormacion" object="${formacion}" z="eK1MS7FAWLh37Ne8NzW54vlUg4M="/>
+        <field:display field="idFormacionDemandanteFormacion" id="s_es_uca_iw_domain_Formacion_idFormacionDemandanteFormacion" object="${formacion}" z="EcFHQtXqoLUMs+B2picj5ygSVZ0="/>
+    </page:show>
+</div>

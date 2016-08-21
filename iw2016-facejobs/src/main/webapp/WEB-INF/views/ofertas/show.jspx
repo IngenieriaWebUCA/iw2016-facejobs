@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_es_uca_iw_domain_Oferta" object="${oferta}" path="/ofertas" z="9ZZyJQGWBUEagHC3xmgyXobcg5U=">
+        <field:display field="titulo" id="s_es_uca_iw_domain_Oferta_titulo" object="${oferta}" z="3bIw6QDweTAmsY5i+3ZvlSowjNc="/>
+        <field:display field="infoPuesto" id="s_es_uca_iw_domain_Oferta_infoPuesto" object="${oferta}" z="bVjh7r462hOASD48cVVRGsj/pKE="/>
+        <field:display field="idFormacion" id="s_es_uca_iw_domain_Oferta_idFormacion" object="${oferta}" z="TF+KIxbUAQ6SyjHK4D00ttm2bHo="/>
+        <field:display field="idSede" id="s_es_uca_iw_domain_Oferta_idSede" object="${oferta}" z="Civ4hXBkDDTSRUKS+MtDeI3127M="/>
+        <field:display field="tipoContrato" id="s_es_uca_iw_domain_Oferta_tipoContrato" object="${oferta}" z="/I8W3PHG4OjowIfim8B2OAETDLw="/>
+        <field:display field="salarioBruto" id="s_es_uca_iw_domain_Oferta_salarioBruto" object="${oferta}" z="+TFhW9750Zkb7ppvf1p4lo57L84="/>
+        <field:display date="true" dateTimePattern="${oferta_fechainc_date_format}" field="fechaInc" id="s_es_uca_iw_domain_Oferta_fechaInc" object="${oferta}" z="7S1lrjvtkVGxmyyerCB2tP0BTeA="/>
+        <field:display field="numVac" id="s_es_uca_iw_domain_Oferta_numVac" object="${oferta}" z="ZMdd2J7ZusmWFPQreychoo1v3qQ="/>
+        <field:display field="perfilDem" id="s_es_uca_iw_domain_Oferta_perfilDem" object="${oferta}" z="Ui7bqrhBDgDuidfSfvoyLPeiPWI="/>
+        <field:display date="true" dateTimePattern="${oferta_fecinioferta_date_format}" field="fecIniOferta" id="s_es_uca_iw_domain_Oferta_fecIniOferta" object="${oferta}" z="3kXgbGrPXypfYbUCg28sNy1WYQ8="/>
+        <field:display date="true" dateTimePattern="${oferta_fecfinoferta_date_format}" field="fecFinOferta" id="s_es_uca_iw_domain_Oferta_fecFinOferta" object="${oferta}" z="1UGqJiQ+ITXIALtE81Lha5Bg1FI="/>
+        <field:display field="estado" id="s_es_uca_iw_domain_Oferta_estado" object="${oferta}" z="1GRG3Bh882Hj/juM1Hf9PAeNpo8="/>
+        <field:display field="idSedeOferta" id="s_es_uca_iw_domain_Oferta_idSedeOferta" object="${oferta}" z="+KR+Vydj4+XAtKrVJoNMvfD/Xx8="/>
+        <field:display field="idInscripcionOferta" id="s_es_uca_iw_domain_Oferta_idInscripcionOferta" object="${oferta}" z="aXQLa+BncHuEUi4p0xM6hJFIMBY="/>
+        <field:display field="idPuestoOferta" id="s_es_uca_iw_domain_Oferta_idPuestoOferta" object="${oferta}" z="UAi02LV75DllTto1Z9H2jo1AKb0="/>
+    </page:show>
+</div>
