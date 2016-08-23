@@ -4,6 +4,7 @@
 package es.uca.iw.domain;
 
 import es.uca.iw.domain.Usuario;
+import es.uca.iw.reference.TipoUsu;
 
 privileged aspect Usuario_Roo_JavaBean {
     
@@ -23,12 +24,12 @@ privileged aspect Usuario_Roo_JavaBean {
         this.password = password;
     }
     
-    public Integer Usuario.getTipo() {
-        return this.tipo;
+    public TipoUsu Usuario.getIdTipoUsu() {
+        return this.idTipoUsu;
     }
     
-    public void Usuario.setTipo(Integer tipo) {
-        this.tipo = tipo;
+    public void Usuario.setIdTipoUsu(TipoUsu idTipoUsu) {
+        this.idTipoUsu = idTipoUsu;
     }
     
 }

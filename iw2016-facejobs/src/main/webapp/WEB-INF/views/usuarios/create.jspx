@@ -3,9 +3,9 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_es_uca_iw_domain_Usuario" modelAttribute="usuario" path="/usuarios" render="${empty dependencies}" z="Ff9Vq8IYFPmRo+9XPuxipMv4nmE=">
-        <field:input field="login" id="c_es_uca_iw_domain_Usuario_login" z="Hmhw0LzDqhZkV/BVCXpBj8AcORU="/>
-        <field:input field="password" id="c_es_uca_iw_domain_Usuario_password" z="zdNC7rToX1Op2bjbo9lr5R6/JpY="/>
-        <field:input field="tipo" id="c_es_uca_iw_domain_Usuario_tipo" validationMessageCode="field_invalid_integer" z="ZoT/8u8h2pgLpzbAhD5tLpZxwko="/>
+        <field:input field="login" id="c_es_uca_iw_domain_Usuario_login" required="true" z="ljXkdTwroM7gdcK6iov5+RfY5Ao="/>
+        <field:input field="password" id="c_es_uca_iw_domain_Usuario_password" required="true" z="s9czk4tXjkfwdplVmZUj1pW/HeQ="/>
+        <field:select field="idTipoUsu" id="c_es_uca_iw_domain_Usuario_idTipoUsu" items="${tipousus}" path="tipousus" required="true" z="urw5XA6FI44r5nRjAIOBf2Mvb1Q="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_es_uca_iw_domain_Usuario" render="${not empty dependencies}" z="peXkigjpRqcOCpvq8jBo+vQmX6g="/>
 </div>

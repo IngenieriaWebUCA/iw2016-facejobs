@@ -6,7 +6,7 @@
         <table:table data="${usuarios}" id="l_es_uca_iw_domain_Usuario" path="/usuarios" z="c5S+CUk09DEVC810rPv0JqoO9Vg=">
             <table:column id="c_es_uca_iw_domain_Usuario_login" property="login" z="JveORdVdYP+yV2iqGAlTNBE0u0I="/>
             <table:column id="c_es_uca_iw_domain_Usuario_password" property="password" z="LvpMiRwKYX/EagFq91J6i8yZMOI="/>
-            <table:column id="c_es_uca_iw_domain_Usuario_tipo" property="tipo" z="53yo6QLhKVKNX0DK0kJVfTTzspk="/>
+            <table:column id="c_es_uca_iw_domain_Usuario_idTipoUsu" property="idTipoUsu" z="7LnfWk9p1sZ4ungHOVOmEkBZEs8="/>
         </table:table>
     </page:list>
 </div>

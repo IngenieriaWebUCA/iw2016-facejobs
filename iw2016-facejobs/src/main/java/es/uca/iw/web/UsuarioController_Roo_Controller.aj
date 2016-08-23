@@ -4,8 +4,10 @@
 package es.uca.iw.web;
 
 import es.uca.iw.domain.Usuario;
+import es.uca.iw.reference.TipoUsu;
 import es.uca.iw.web.UsuarioController;
 import java.io.UnsupportedEncodingException;
+import java.util.Arrays;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import org.springframework.ui.Model;
@@ -86,6 +88,7 @@ privileged aspect UsuarioController_Roo_Controller {
     
     void UsuarioController.populateEditForm(Model uiModel, Usuario usuario) {
         uiModel.addAttribute("usuario", usuario);
+        uiModel.addAttribute("tipousus", Arrays.asList(TipoUsu.values()));
     }
     
     String UsuarioController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

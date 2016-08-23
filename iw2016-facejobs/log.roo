@@ -168,3 +168,29 @@ enum constant --name Resuelta
 focus --class  ~.domain.inscripcion
 field enum --fieldName estado --type ~reference.estadoIns --notNull
 web mvc all --package ~.web
+enum type --class ~.reference.tipoUsu
+enum constant --name Empresa
+enum constant --name Demandante
+focus --class  ~.domain.usuario
+field enum --fieldName idTipoUsu --type ~reference.tipoUsu --notNull
+enum type --class ~.reference.estadoOfer
+enum constant --name Abierta
+enum constant --name Cerrada
+enum constant --name Cancelada
+focus --class  ~.domain.oferta
+field enum --fieldName estadoOferta --type ~reference.estadoOfer --notNull
+web mvc finder all
+web mvc all --package ~.web
+// [failed] entity jpa --class ~.domain.demandante --sequenceName DE_SEQ --testAutomatically
+// [failed] entity jpa --class ~.domain.demandantE --sequenceName DEE_SEQ --testAutomatically
+enum type --class ~.reference.tipoFormacion
+enum constant --name ESO
+enum constant --name Bachillerato
+enum constant --name CFGM
+enum constant --name CFGS
+enum constant --name Universidad
+enum constant --name Master
+enum constant --name Doctorado
+focus --class  ~.domain.formacion
+field enum --fieldName tipoForma --type ~reference.tipoForma --notNull
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-08-23 21:19:30

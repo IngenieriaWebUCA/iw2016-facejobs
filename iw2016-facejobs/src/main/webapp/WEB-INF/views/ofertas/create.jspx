@@ -14,10 +14,10 @@
         <field:input field="perfilDem" id="c_es_uca_iw_domain_Oferta_perfilDem" z="LFmHgjhM+Ioy9H7FMVaCwpwyqzM="/>
         <field:datetime dateTimePattern="${oferta_fecinioferta_date_format}" field="fecIniOferta" id="c_es_uca_iw_domain_Oferta_fecIniOferta" z="fnK/GAylnMLZf1yDCT6EJKMWKIY="/>
         <field:datetime dateTimePattern="${oferta_fecfinoferta_date_format}" field="fecFinOferta" id="c_es_uca_iw_domain_Oferta_fecFinOferta" z="vv63g7umHXWf+VPyH3v7x/tfh38="/>
-        <field:input field="estado" id="c_es_uca_iw_domain_Oferta_estado" validationMessageCode="field_invalid_integer" z="afhYiHpG2mu7dOb26BhNT7TxvH4="/>
         <field:select field="idSedeOferta" id="c_es_uca_iw_domain_Oferta_idSedeOferta" itemValue="id" items="${sedes}" path="/sedes" z="8qbuwK98gHWbyWM+yzKqZlMu++Q="/>
         <field:select field="idInscripcionOferta" id="c_es_uca_iw_domain_Oferta_idInscripcionOferta" itemValue="id" items="${inscripcions}" path="/inscripcions" z="zIvZr7cMTSkuDK6ByFPcerc8t3g="/>
         <field:select field="idPuestoOferta" id="c_es_uca_iw_domain_Oferta_idPuestoOferta" itemValue="id" items="${puestoes}" path="/puestoes" z="GThl3kVmHJmpSunz90R3TekWk+Q="/>
+        <field:input field="estado" id="c_es_uca_iw_domain_Oferta_estado" validationMessageCode="field_invalid_integer" z="afhYiHpG2mu7dOb26BhNT7TxvH4="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_es_uca_iw_domain_Oferta" render="${not empty dependencies}" z="6zr5JNjYQvX9U5r0KOnV7Cr90XM="/>
 </div>

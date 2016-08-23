@@ -9,15 +9,15 @@
         <field:input field="direccion" id="c_es_uca_iw_domain_Demandante_direccion" z="9tI2XeKAlSIauJs2taXyZtK16hI="/>
         <field:input field="email" id="c_es_uca_iw_domain_Demandante_email" validationMessageCode="field_invalid_email" z="Xkp0sx5/8wNRN41Sw3vJQi/PfOQ="/>
         <field:input field="telefono" id="c_es_uca_iw_domain_Demandante_telefono" z="RLszve3jHqN1vy7aTTZTHhmndRU="/>
-        <field:input field="idusuario" id="c_es_uca_iw_domain_Demandante_idusuario" validationMessageCode="field_invalid_integer" z="pBUDyFWU59tX6WIYYhVR041hGcw="/>
         <field:input field="resumenTray" id="c_es_uca_iw_domain_Demandante_resumenTray" z="wrvxV95boHkou1BH4AYVecvh/cU="/>
         <field:input field="foto" id="c_es_uca_iw_domain_Demandante_foto" z="TUx45lOAfSwU7N0oUug2C9HM6YQ="/>
         <field:input field="trabajosDisp" id="c_es_uca_iw_domain_Demandante_trabajosDisp" z="URpHAkOf6MwKJ3+bp3WXv8quib0="/>
-        <field:input field="experiencia" id="c_es_uca_iw_domain_Demandante_experiencia" z="8o2EUWGQlkBhFpzsI20/tFDcRHs="/>
         <field:select field="idusuarioDem" id="c_es_uca_iw_domain_Demandante_idusuarioDem" itemValue="id" items="${usuarios}" path="/usuarios" z="rQa8zFIvCWBpD6WwCwGLaqQQnU4="/>
-        <field:select field="idInscripcionDemandante" id="c_es_uca_iw_domain_Demandante_idInscripcionDemandante" itemValue="id" items="${inscripcions}" path="/inscripcions" z="SOrfM4eShqY4AyOu5Ui578XMLHQ="/>
         <field:select field="idExperienciaDemandante" id="c_es_uca_iw_domain_Demandante_idExperienciaDemandante" itemValue="id" items="${demandantes}" path="/demandantes" z="mdCTqUNy1qLLI9Tu06he1W5R7vk="/>
         <field:select field="idPuestoDemandante" id="c_es_uca_iw_domain_Demandante_idPuestoDemandante" itemValue="id" items="${puestoes}" path="/puestoes" z="up5/LVWd+gfiuUUUvOlXT/bJ730="/>
         <field:select field="idFormacionDemandanteDemandante" id="c_es_uca_iw_domain_Demandante_idFormacionDemandanteDemandante" itemValue="id" items="${formaciondemandantes}" path="/formaciondemandantes" z="50zkHBf0PqupPYCfD0V3IkVb4ec="/>
+        <field:select field="idInscripcionDemandante" id="c_es_uca_iw_domain_Demandante_idInscripcionDemandante" itemValue="id" items="${inscripcions}" path="/inscripcions" z="SOrfM4eShqY4AyOu5Ui578XMLHQ="/>
+        <field:input field="idusuario" id="c_es_uca_iw_domain_Demandante_idusuario" validationMessageCode="field_invalid_integer" z="pBUDyFWU59tX6WIYYhVR041hGcw="/>
+        <field:input field="experiencia" id="c_es_uca_iw_domain_Demandante_experiencia" z="8o2EUWGQlkBhFpzsI20/tFDcRHs="/>
     </form:update>
 </div>

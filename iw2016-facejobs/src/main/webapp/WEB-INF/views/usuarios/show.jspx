@@ -5,6 +5,6 @@
     <page:show id="ps_es_uca_iw_domain_Usuario" object="${usuario}" path="/usuarios" z="KS3UrodUhGmpHa+ZB1EWyvhl6vY=">
         <field:display field="login" id="s_es_uca_iw_domain_Usuario_login" object="${usuario}" z="wKcNSCNbX6siJywg7Nh9s22RC0U="/>
         <field:display field="password" id="s_es_uca_iw_domain_Usuario_password" object="${usuario}" z="OpdYadbzPHbFFGzmy8Q6jsDnEjE="/>
-        <field:display field="tipo" id="s_es_uca_iw_domain_Usuario_tipo" object="${usuario}" z="/tqmorAOqULBeRAo9PCuOV0f50c="/>
+        <field:display field="idTipoUsu" id="s_es_uca_iw_domain_Usuario_idTipoUsu" object="${usuario}" z="Fa4v5ZOy1ZD0ViOPXFtboHztTzA="/>
     </page:show>
 </div>
