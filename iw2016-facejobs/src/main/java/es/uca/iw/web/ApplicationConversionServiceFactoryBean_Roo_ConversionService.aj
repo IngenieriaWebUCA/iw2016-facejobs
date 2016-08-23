@@ -171,7 +171,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<Inscripcion, String> ApplicationConversionServiceFactoryBean.getInscripcionToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<es.uca.iw.domain.Inscripcion, java.lang.String>() {
             public String convert(Inscripcion inscripcion) {
-                return new StringBuilder().append(inscripcion.getIdoferta()).append(' ').append(inscripcion.getEstado()).toString();
+                return new StringBuilder().append(inscripcion.getIdExperiencia()).toString();
             }
         };
     }

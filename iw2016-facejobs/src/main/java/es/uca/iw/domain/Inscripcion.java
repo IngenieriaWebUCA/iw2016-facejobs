@@ -4,6 +4,8 @@ import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
 import org.springframework.roo.addon.tostring.RooToString;
 import javax.validation.constraints.NotNull;
 import javax.persistence.ManyToOne;
+import es.uca.iw.reference.EstadoIns;
+import javax.persistence.Enumerated;
 
 @RooJavaBean
 @RooToString
@@ -13,12 +15,7 @@ public class Inscripcion {
     /**
      */
     @NotNull
-    private Integer idoferta;
-
-    /**
-     */
-    @NotNull
-    private Integer estado;
+    private Integer idExperiencia;
 
     /**
      */
@@ -29,4 +26,10 @@ public class Inscripcion {
      */
     @ManyToOne
     private Oferta idOferta;
+
+    /**
+     */
+    @NotNull
+    @Enumerated
+    private EstadoIns estado;
 }

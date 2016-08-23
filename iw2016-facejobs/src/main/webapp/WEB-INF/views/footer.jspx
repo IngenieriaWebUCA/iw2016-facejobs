@@ -25,6 +25,7 @@
     <c:out value=": "/>
   <util:language label="English" locale="en"/>
     <util:language label="Espanol" locale="es"/>
+    <util:language label="Deubuilderh" locale="de"/>
     </span>
   <util:theme/>
 

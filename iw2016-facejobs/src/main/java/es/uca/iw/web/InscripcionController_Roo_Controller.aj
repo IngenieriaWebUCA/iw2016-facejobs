@@ -6,8 +6,10 @@ package es.uca.iw.web;
 import es.uca.iw.domain.Demandante;
 import es.uca.iw.domain.Inscripcion;
 import es.uca.iw.domain.Oferta;
+import es.uca.iw.reference.EstadoIns;
 import es.uca.iw.web.InscripcionController;
 import java.io.UnsupportedEncodingException;
+import java.util.Arrays;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import org.springframework.ui.Model;
@@ -90,6 +92,7 @@ privileged aspect InscripcionController_Roo_Controller {
         uiModel.addAttribute("inscripcion", inscripcion);
         uiModel.addAttribute("demandantes", Demandante.findAllDemandantes());
         uiModel.addAttribute("ofertas", Oferta.findAllOfertas());
+        uiModel.addAttribute("estadoinses", Arrays.asList(EstadoIns.values()));
     }
     
     String InscripcionController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {
