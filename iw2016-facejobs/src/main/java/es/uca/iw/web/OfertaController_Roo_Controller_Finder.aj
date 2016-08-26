@@ -37,6 +37,7 @@ privileged aspect OfertaController_Roo_Controller_Finder {
     
     @RequestMapping(params = { "find=ByTipoContrato", "form" }, method = RequestMethod.GET)
     public String OfertaController.findOfertasByTipoContratoForm(Model uiModel) {
+        uiModel.addAttribute("tipocontratoes", java.util.Arrays.asList(TipoContrato.class.getEnumConstants()));
         return "ofertas/findOfertasByTipoContrato";
     }
     

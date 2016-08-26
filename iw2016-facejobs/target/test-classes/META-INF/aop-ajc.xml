@@ -1,5 +1,53 @@
 <aspectj>
 <aspects>
+<aspect name="es.uca.iw.domain.TipoformacionDataOnDemand_Roo_Configurable"/>
+<aspect name="es.uca.iw.domain.FormaciondemandanteIntegrationTest_Roo_Configurable"/>
+<aspect name="es.uca.iw.domain.TipoformacionDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="es.uca.iw.domain.UsuarioDataOnDemand_Roo_Configurable"/>
+<aspect name="es.uca.iw.domain.SedeDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="es.uca.iw.domain.SedeIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="es.uca.iw.domain.InscripcionIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="es.uca.iw.domain.TipoformacionIntegrationTest_Roo_Configurable"/>
+<aspect name="es.uca.iw.domain.ExperienciaDataOnDemand_Roo_Configurable"/>
+<aspect name="es.uca.iw.domain.OfertaIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="es.uca.iw.domain.FormaciondemandanteDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="es.uca.iw.domain.FormacionDataOnDemand_Roo_Configurable"/>
+<aspect name="es.uca.iw.domain.DemandanteDataOnDemand_Roo_Configurable"/>
+<aspect name="es.uca.iw.domain.EmpresaIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="es.uca.iw.domain.OfertaDataOnDemand_Roo_Configurable"/>
+<aspect name="es.uca.iw.domain.UsuarioIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="es.uca.iw.domain.SedeIntegrationTest_Roo_Configurable"/>
+<aspect name="es.uca.iw.domain.UsuarioDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="es.uca.iw.domain.FormacionIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="es.uca.iw.domain.CentroIntegrationTest_Roo_Configurable"/>
+<aspect name="es.uca.iw.domain.PuestoIntegrationTest_Roo_Configurable"/>
+<aspect name="es.uca.iw.domain.FormaciondemandanteDataOnDemand_Roo_Configurable"/>
+<aspect name="es.uca.iw.domain.FormacionDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="es.uca.iw.domain.TipoformacionIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="es.uca.iw.domain.ExperienciaDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="es.uca.iw.domain.EmpresaDataOnDemand_Roo_Configurable"/>
+<aspect name="es.uca.iw.domain.PuestoDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="es.uca.iw.domain.EmpresaDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="es.uca.iw.domain.PuestoIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="es.uca.iw.domain.InscripcionDataOnDemand_Roo_Configurable"/>
+<aspect name="es.uca.iw.domain.PuestoDataOnDemand_Roo_Configurable"/>
+<aspect name="es.uca.iw.domain.OfertaIntegrationTest_Roo_Configurable"/>
+<aspect name="es.uca.iw.domain.UsuarioIntegrationTest_Roo_Configurable"/>
+<aspect name="es.uca.iw.domain.CentroIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="es.uca.iw.domain.ExperienciaIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="es.uca.iw.domain.ExperienciaIntegrationTest_Roo_Configurable"/>
+<aspect name="es.uca.iw.domain.SedeDataOnDemand_Roo_Configurable"/>
+<aspect name="es.uca.iw.domain.CentroDataOnDemand_Roo_Configurable"/>
+<aspect name="es.uca.iw.domain.DemandanteIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="es.uca.iw.domain.InscripcionIntegrationTest_Roo_Configurable"/>
+<aspect name="es.uca.iw.domain.CentroDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="es.uca.iw.domain.EmpresaIntegrationTest_Roo_Configurable"/>
+<aspect name="es.uca.iw.domain.DemandanteIntegrationTest_Roo_Configurable"/>
+<aspect name="es.uca.iw.domain.InscripcionDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="es.uca.iw.domain.FormacionIntegrationTest_Roo_Configurable"/>
+<aspect name="es.uca.iw.domain.OfertaDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="es.uca.iw.domain.DemandanteDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="es.uca.iw.domain.FormaciondemandanteIntegrationTest_Roo_IntegrationTest"/>
 </aspects>
 </aspectj>
 

@@ -57,5 +57,8 @@
             <menu:item id="i_formacion_new" messageCode="global_menu_new" url="/formacions?form" z="J5LIhWh+qugo3BonD7DqT+MNhdk="/>
             <menu:item id="i_formacion_list" messageCode="global_menu_list" url="/formacions?page=1&amp;size=${empty param.size ? 10 : param.size}" z="HUwg6eWuyi/+bXE5Mnr+igrwIkc="/>
         </menu:category>
+        <menu:category id="c_seleniumtests" z="PPLMd2yNB6/LSbjIWogAacRPU+Q=">
+            <menu:item id="si_seleniumtests_test" messageCode="selenium_menu_test_suite" url="/resources/selenium/test-suite.xhtml" z="wwunW/IPDcunN97u41MvMJZQ2to="/>
+        </menu:category>
     </menu:menu>
 </div>
