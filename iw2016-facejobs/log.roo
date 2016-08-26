@@ -205,3 +205,5 @@ web mvc all --package ~.web
 enum type --class ~.reference.tipoContrato
 enum constant --name Indefinido
 enum constant --name Temporal
+web mvc all --package ~.web
+web mvc all --package ~.web

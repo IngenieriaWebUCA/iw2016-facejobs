@@ -12,6 +12,7 @@ public class Centro {
 
     /**
      */
+    @NotNull
     private String nombre;
 
     /**

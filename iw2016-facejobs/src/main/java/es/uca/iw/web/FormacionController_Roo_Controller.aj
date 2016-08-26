@@ -4,8 +4,7 @@
 package es.uca.iw.web;
 
 import es.uca.iw.domain.Formacion;
-import es.uca.iw.domain.Formaciondemandante;
-import es.uca.iw.domain.Oferta;
+import es.uca.iw.domain.Tipoformacion;
 import es.uca.iw.web.FormacionController;
 import java.io.UnsupportedEncodingException;
 import javax.servlet.http.HttpServletRequest;
@@ -88,8 +87,7 @@ privileged aspect FormacionController_Roo_Controller {
     
     void FormacionController.populateEditForm(Model uiModel, Formacion formacion) {
         uiModel.addAttribute("formacion", formacion);
-        uiModel.addAttribute("formaciondemandantes", Formaciondemandante.findAllFormaciondemandantes());
-        uiModel.addAttribute("ofertas", Oferta.findAllOfertas());
+        uiModel.addAttribute("tipoformacions", Tipoformacion.findAllTipoformacions());
     }
     
     String FormacionController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

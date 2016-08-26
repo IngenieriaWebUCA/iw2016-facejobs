@@ -123,7 +123,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<Formacion, String> ApplicationConversionServiceFactoryBean.getFormacionToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<es.uca.iw.domain.Formacion, java.lang.String>() {
             public String convert(Formacion formacion) {
-                return new StringBuilder().append(formacion.getIdTipoFormacion()).append(' ').append(formacion.getTitulacion()).append(' ').append(formacion.getNivel()).toString();
+                return new StringBuilder().append(formacion.getTitulacion()).append(' ').append(formacion.getNivel()).toString();
             }
         };
     }

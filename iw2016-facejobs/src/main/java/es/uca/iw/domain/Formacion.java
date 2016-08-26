@@ -12,24 +12,16 @@ public class Formacion {
 
     /**
      */
-    @NotNull
-    private Integer idTipoFormacion;
+    @ManyToOne
+    private Tipoformacion idTipoFormacion;
 
     /**
      */
-    private Integer titulacion;
+    @NotNull
+    private String titulacion;
 
     /**
      */
     private String nivel;
-
-    /**
-     */
-    @ManyToOne
-    private Oferta idOfertaFormacion;
-
-    /**
-     */
-    @ManyToOne
-    private Formaciondemandante idFormacionDemandanteFormacion;
+    
 }

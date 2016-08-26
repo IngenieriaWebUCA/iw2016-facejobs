@@ -4,24 +4,23 @@
 package es.uca.iw.domain;
 
 import es.uca.iw.domain.Formacion;
-import es.uca.iw.domain.Formaciondemandante;
-import es.uca.iw.domain.Oferta;
+import es.uca.iw.domain.Tipoformacion;
 
 privileged aspect Formacion_Roo_JavaBean {
     
-    public Integer Formacion.getIdTipoFormacion() {
+    public Tipoformacion Formacion.getIdTipoFormacion() {
         return this.idTipoFormacion;
     }
     
-    public void Formacion.setIdTipoFormacion(Integer idTipoFormacion) {
+    public void Formacion.setIdTipoFormacion(Tipoformacion idTipoFormacion) {
         this.idTipoFormacion = idTipoFormacion;
     }
     
-    public Integer Formacion.getTitulacion() {
+    public String Formacion.getTitulacion() {
         return this.titulacion;
     }
     
-    public void Formacion.setTitulacion(Integer titulacion) {
+    public void Formacion.setTitulacion(String titulacion) {
         this.titulacion = titulacion;
     }
     
@@ -31,22 +30,6 @@ privileged aspect Formacion_Roo_JavaBean {
     
     public void Formacion.setNivel(String nivel) {
         this.nivel = nivel;
-    }
-    
-    public Oferta Formacion.getIdOfertaFormacion() {
-        return this.idOfertaFormacion;
-    }
-    
-    public void Formacion.setIdOfertaFormacion(Oferta idOfertaFormacion) {
-        this.idOfertaFormacion = idOfertaFormacion;
-    }
-    
-    public Formaciondemandante Formacion.getIdFormacionDemandanteFormacion() {
-        return this.idFormacionDemandanteFormacion;
-    }
-    
-    public void Formacion.setIdFormacionDemandanteFormacion(Formaciondemandante idFormacionDemandanteFormacion) {
-        this.idFormacionDemandanteFormacion = idFormacionDemandanteFormacion;
     }
     
 }

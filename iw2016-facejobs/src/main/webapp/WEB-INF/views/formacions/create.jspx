@@ -3,11 +3,9 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_es_uca_iw_domain_Formacion" modelAttribute="formacion" path="/formacions" render="${empty dependencies}" z="aa8ZqfiCTBSN2WH2/rY4gneGhY4=">
-        <field:input field="titulacion" id="c_es_uca_iw_domain_Formacion_titulacion" validationMessageCode="field_invalid_integer" z="o1JWToJ6T53Jve75L0SesfRuAF4="/>
+        <field:input field="titulacion" id="c_es_uca_iw_domain_Formacion_titulacion" required="true" z="M4njO/Kam4+LZ253bnQzXSCabPE="/>
         <field:input field="nivel" id="c_es_uca_iw_domain_Formacion_nivel" z="57AC5DXfxPbg8g3WlDpJsD4/w7g="/>
-        <field:select field="idOfertaFormacion" id="c_es_uca_iw_domain_Formacion_idOfertaFormacion" itemValue="id" items="${ofertas}" path="/ofertas" z="xyeHRX4LrOC9Pcd5GZr7qxpPYeU="/>
-        <field:select field="idFormacionDemandanteFormacion" id="c_es_uca_iw_domain_Formacion_idFormacionDemandanteFormacion" itemValue="id" items="${formaciondemandantes}" path="/formaciondemandantes" z="YP1hI6fgpJAj/U6SRUOoZ8fuQ7E="/>
-        <field:input field="idTipoFormacion" id="c_es_uca_iw_domain_Formacion_idTipoFormacion" required="true" validationMessageCode="field_invalid_integer" z="4Be0JizVg48r40V9XxR2/1uX0Ek="/>
+        <field:select field="idTipoFormacion" id="c_es_uca_iw_domain_Formacion_idTipoFormacion" itemValue="id" items="${tipoformacions}" path="/tipoformacions" z="Ax3/7jAxOq+r4JTDvj+qh+7GJfM="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_es_uca_iw_domain_Formacion" render="${not empty dependencies}" z="6JVix9P0ajns45BC+MxYsfnt3ts="/>
 </div>
