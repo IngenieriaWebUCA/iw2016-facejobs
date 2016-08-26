@@ -5,6 +5,7 @@ package es.uca.iw.domain;
 
 import es.uca.iw.domain.Oferta;
 import es.uca.iw.reference.EstadoOfer;
+import es.uca.iw.reference.TipoContrato;
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
 
@@ -18,7 +19,7 @@ privileged aspect Oferta_Roo_Finder {
         return ((Long) q.getSingleResult());
     }
     
-    public static Long Oferta.countFindOfertasByTipoContrato(Integer tipoContrato) {
+    public static Long Oferta.countFindOfertasByTipoContrato(TipoContrato tipoContrato) {
         if (tipoContrato == null) throw new IllegalArgumentException("The tipoContrato argument is required");
         EntityManager em = Oferta.entityManager();
         TypedQuery q = em.createQuery("SELECT COUNT(o) FROM Oferta AS o WHERE o.tipoContrato = :tipoContrato", Long.class);
@@ -72,7 +73,7 @@ privileged aspect Oferta_Roo_Finder {
         return q;
     }
     
-    public static TypedQuery<Oferta> Oferta.findOfertasByTipoContrato(Integer tipoContrato) {
+    public static TypedQuery<Oferta> Oferta.findOfertasByTipoContrato(TipoContrato tipoContrato) {
         if (tipoContrato == null) throw new IllegalArgumentException("The tipoContrato argument is required");
         EntityManager em = Oferta.entityManager();
         TypedQuery<Oferta> q = em.createQuery("SELECT o FROM Oferta AS o WHERE o.tipoContrato = :tipoContrato", Oferta.class);
@@ -80,7 +81,7 @@ privileged aspect Oferta_Roo_Finder {
         return q;
     }
     
-    public static TypedQuery<Oferta> Oferta.findOfertasByTipoContrato(Integer tipoContrato, String sortFieldName, String sortOrder) {
+    public static TypedQuery<Oferta> Oferta.findOfertasByTipoContrato(TipoContrato tipoContrato, String sortFieldName, String sortOrder) {
         if (tipoContrato == null) throw new IllegalArgumentException("The tipoContrato argument is required");
         EntityManager em = Oferta.entityManager();
         StringBuilder queryBuilder = new StringBuilder("SELECT o FROM Oferta AS o WHERE o.tipoContrato = :tipoContrato");

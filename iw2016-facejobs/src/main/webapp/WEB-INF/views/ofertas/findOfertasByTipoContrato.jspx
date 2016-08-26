@@ -3,6 +3,6 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:find finderName="ByTipoContrato" id="ff_es_uca_iw_domain_Oferta" path="/ofertas" z="cxusPi/TghCKISMv86Xx8D3CKuw=">
-        <field:input disableFormBinding="true" field="tipoContrato" id="f_es_uca_iw_domain_Oferta_tipoContrato" required="true" validationMessageCode="field_invalid_integer" z="aMH/dSLQ5QXGU87Kd6XbIQFYLOw="/>
+        <field:input disableFormBinding="true" field="tipoContrato" id="f_es_uca_iw_domain_Oferta_tipoContrato" required="true" z="MD0vlGQg0mz7BKbVFQts/18FpHw="/>
     </form:find>
 </div>

@@ -4,6 +4,7 @@ import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
 import org.springframework.roo.addon.tostring.RooToString;
 
 import es.uca.iw.reference.EstadoOfer;
+import es.uca.iw.reference.TipoContrato;
 
 import javax.validation.constraints.NotNull;
 import java.util.Date;
@@ -36,7 +37,7 @@ public class Oferta {
 
     /**
      */
-    private Integer tipoContrato;
+    private TipoContrato tipoContrato;
 
     /**
      */

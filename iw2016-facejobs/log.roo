@@ -202,3 +202,6 @@ focus --class  ~.domain.demandante
 field enum --fieldName tipoSexo --type ~reference.tipoSx --notNull
 web mvc all --package ~.web
 web mvc all --package ~.web
+enum type --class ~.reference.tipoContrato
+enum constant --name Indefinido
+enum constant --name Temporal

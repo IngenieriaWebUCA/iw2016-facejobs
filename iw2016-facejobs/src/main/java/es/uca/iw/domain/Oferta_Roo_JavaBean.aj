@@ -9,6 +9,7 @@ import es.uca.iw.domain.Oferta;
 import es.uca.iw.domain.Puesto;
 import es.uca.iw.domain.Sede;
 import es.uca.iw.reference.EstadoOfer;
+import es.uca.iw.reference.TipoContrato;
 import java.util.Date;
 
 privileged aspect Oferta_Roo_JavaBean {
@@ -37,11 +38,11 @@ privileged aspect Oferta_Roo_JavaBean {
         this.idFormacion = idFormacion;
     }
     
-    public Integer Oferta.getTipoContrato() {
+    public TipoContrato Oferta.getTipoContrato() {
         return this.tipoContrato;
     }
     
-    public void Oferta.setTipoContrato(Integer tipoContrato) {
+    public void Oferta.setTipoContrato(TipoContrato tipoContrato) {
         this.tipoContrato = tipoContrato;
     }
     

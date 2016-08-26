@@ -5,6 +5,7 @@ package es.uca.iw.web;
 
 import es.uca.iw.domain.Oferta;
 import es.uca.iw.reference.EstadoOfer;
+import es.uca.iw.reference.TipoContrato;
 import es.uca.iw.web.OfertaController;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +16,7 @@ privileged aspect OfertaController_Roo_Controller_Finder {
     
     @RequestMapping(params = { "find=ByEstado", "form" }, method = RequestMethod.GET)
     public String OfertaController.findOfertasByEstadoForm(Model uiModel) {
+        uiModel.addAttribute("estadoofers", java.util.Arrays.asList(EstadoOfer.class.getEnumConstants()));
         return "ofertas/findOfertasByEstado";
     }
     
@@ -39,7 +41,7 @@ privileged aspect OfertaController_Roo_Controller_Finder {
     }
     
     @RequestMapping(params = "find=ByTipoContrato", method = RequestMethod.GET)
-    public String OfertaController.findOfertasByTipoContrato(@RequestParam("tipoContrato") Integer tipoContrato, @RequestParam(value = "page", required = false) Integer page, @RequestParam(value = "size", required = false) Integer size, @RequestParam(value = "sortFieldName", required = false) String sortFieldName, @RequestParam(value = "sortOrder", required = false) String sortOrder, Model uiModel) {
+    public String OfertaController.findOfertasByTipoContrato(@RequestParam("tipoContrato") TipoContrato tipoContrato, @RequestParam(value = "page", required = false) Integer page, @RequestParam(value = "size", required = false) Integer size, @RequestParam(value = "sortFieldName", required = false) String sortFieldName, @RequestParam(value = "sortOrder", required = false) String sortOrder, Model uiModel) {
         if (page != null || size != null) {
             int sizeNo = size == null ? 10 : size.intValue();
             final int firstResult = page == null ? 0 : (page.intValue() - 1) * sizeNo;

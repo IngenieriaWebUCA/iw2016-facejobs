@@ -9,6 +9,7 @@ import es.uca.iw.domain.Oferta;
 import es.uca.iw.domain.Puesto;
 import es.uca.iw.domain.Sede;
 import es.uca.iw.reference.EstadoOfer;
+import es.uca.iw.reference.TipoContrato;
 import es.uca.iw.web.OfertaController;
 import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
@@ -108,6 +109,7 @@ privileged aspect OfertaController_Roo_Controller {
         uiModel.addAttribute("puestoes", Puesto.findAllPuestoes());
         uiModel.addAttribute("sedes", Sede.findAllSedes());
         uiModel.addAttribute("estadoofers", Arrays.asList(EstadoOfer.values()));
+        uiModel.addAttribute("tipocontratoes", Arrays.asList(TipoContrato.values()));
     }
     
     String OfertaController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {
