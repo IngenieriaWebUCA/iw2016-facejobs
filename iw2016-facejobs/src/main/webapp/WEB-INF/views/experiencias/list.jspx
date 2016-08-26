@@ -9,7 +9,7 @@
             <table:column id="c_es_uca_iw_domain_Experiencia_salario" property="salario" z="exjMiQOi2spyeivyHOokY7bB9N4="/>
             <table:column id="c_es_uca_iw_domain_Experiencia_tareas" property="tareas" z="4aar+WA9AZ3asbTutzuXRCZ/Gis="/>
             <table:column id="c_es_uca_iw_domain_Experiencia_idPuestoExperiencia" property="idPuestoExperiencia" z="CQoHgo/9HPXxv8eHfWbkN1L3OHk="/>
-            <table:column id="c_es_uca_iw_domain_Experiencia_idcurriculum" property="idcurriculum" z="NU8PWSWlJcwo9X2B5Yn1p24uhUw="/>
+            <table:column id="c_es_uca_iw_domain_Experiencia_idDemandante" property="idDemandante" z="Mg/9N8UKEmPM8p489nd9tPyXGjs="/>
         </table:table>
     </page:list>
 </div>

@@ -3,6 +3,7 @@
 
 package es.uca.iw.web;
 
+import es.uca.iw.domain.Demandante;
 import es.uca.iw.domain.Experiencia;
 import es.uca.iw.domain.Puesto;
 import es.uca.iw.web.ExperienciaController;
@@ -97,6 +98,7 @@ privileged aspect ExperienciaController_Roo_Controller {
     void ExperienciaController.populateEditForm(Model uiModel, Experiencia experiencia) {
         uiModel.addAttribute("experiencia", experiencia);
         addDateTimeFormatPatterns(uiModel);
+        uiModel.addAttribute("demandantes", Demandante.findAllDemandantes());
         uiModel.addAttribute("puestoes", Puesto.findAllPuestoes());
     }
     

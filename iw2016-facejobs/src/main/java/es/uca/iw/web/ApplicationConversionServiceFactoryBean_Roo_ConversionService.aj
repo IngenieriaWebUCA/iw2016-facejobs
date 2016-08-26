@@ -99,7 +99,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<Experiencia, String> ApplicationConversionServiceFactoryBean.getExperienciaToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<es.uca.iw.domain.Experiencia, java.lang.String>() {
             public String convert(Experiencia experiencia) {
-                return new StringBuilder().append(experiencia.getIdcurriculum()).append(' ').append(experiencia.getFecini()).append(' ').append(experiencia.getFecfin()).append(' ').append(experiencia.getSalario()).toString();
+                return new StringBuilder().append(experiencia.getFecini()).append(' ').append(experiencia.getFecfin()).append(' ').append(experiencia.getSalario()).append(' ').append(experiencia.getTareas()).toString();
             }
         };
     }

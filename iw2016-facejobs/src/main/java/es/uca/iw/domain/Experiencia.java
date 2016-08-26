@@ -16,8 +16,8 @@ public class Experiencia {
 
     /**
      */
-    @NotNull
-    private Integer idcurriculum;
+    @ManyToOne
+    private Demandante idDemandante;
 
     /**
      */

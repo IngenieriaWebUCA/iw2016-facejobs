@@ -3,18 +3,19 @@
 
 package es.uca.iw.domain;
 
+import es.uca.iw.domain.Demandante;
 import es.uca.iw.domain.Experiencia;
 import es.uca.iw.domain.Puesto;
 import java.util.Date;
 
 privileged aspect Experiencia_Roo_JavaBean {
     
-    public Integer Experiencia.getIdcurriculum() {
-        return this.idcurriculum;
+    public Demandante Experiencia.getIdDemandante() {
+        return this.idDemandante;
     }
     
-    public void Experiencia.setIdcurriculum(Integer idcurriculum) {
-        this.idcurriculum = idcurriculum;
+    public void Experiencia.setIdDemandante(Demandante idDemandante) {
+        this.idDemandante = idDemandante;
     }
     
     public Date Experiencia.getFecini() {

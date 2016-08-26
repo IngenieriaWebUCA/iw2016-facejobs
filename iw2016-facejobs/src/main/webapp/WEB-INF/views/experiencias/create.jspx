@@ -8,7 +8,7 @@
         <field:input field="salario" id="c_es_uca_iw_domain_Experiencia_salario" validationMessageCode="field_invalid_integer" z="Qrnb+h3KFp9yJ5ws5DjIBetEMCg="/>
         <field:input field="tareas" id="c_es_uca_iw_domain_Experiencia_tareas" z="P7eR4QHD2FcEWkGMV0vLY9LDoE8="/>
         <field:select field="idPuestoExperiencia" id="c_es_uca_iw_domain_Experiencia_idPuestoExperiencia" itemValue="id" items="${puestoes}" path="/puestoes" z="xdorNVOCSXHhmOoE9/k8mM84eZw="/>
-        <field:input field="idcurriculum" id="c_es_uca_iw_domain_Experiencia_idcurriculum" required="true" validationMessageCode="field_invalid_integer" z="zbn3PVqY9VOr41cXK9dBbt+gRvU="/>
+        <field:select field="idDemandante" id="c_es_uca_iw_domain_Experiencia_idDemandante" itemValue="id" items="${demandantes}" path="/demandantes" z="bnwhHgHcqrdNrMwPdoT1mRQOfXU="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_es_uca_iw_domain_Experiencia" render="${not empty dependencies}" z="bWQJrGo4T8fvAvYv0wTx+namLqg="/>
 </div>

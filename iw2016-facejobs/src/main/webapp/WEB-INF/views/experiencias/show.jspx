@@ -8,6 +8,6 @@
         <field:display field="salario" id="s_es_uca_iw_domain_Experiencia_salario" object="${experiencia}" z="n4du4S2IzSGdG5WYeTjCT60dbik="/>
         <field:display field="tareas" id="s_es_uca_iw_domain_Experiencia_tareas" object="${experiencia}" z="IMIWDuX0roJV8nv3UH4uOwqsSpQ="/>
         <field:display field="idPuestoExperiencia" id="s_es_uca_iw_domain_Experiencia_idPuestoExperiencia" object="${experiencia}" z="yffRpu2akJhKAdpK7rePxNi4VgI="/>
-        <field:display field="idcurriculum" id="s_es_uca_iw_domain_Experiencia_idcurriculum" object="${experiencia}" z="N6bZqCIkPjCCx+5QAuI9ya7PW1E="/>
+        <field:display field="idDemandante" id="s_es_uca_iw_domain_Experiencia_idDemandante" object="${experiencia}" z="Ak7VYEsg1WmZbgXfVWCL5a+F0q8="/>
     </page:show>
 </div>
