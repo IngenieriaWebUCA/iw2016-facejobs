@@ -4,6 +4,7 @@
 package es.uca.iw.web;
 
 import es.uca.iw.domain.Oferta;
+import es.uca.iw.reference.EstadoOfer;
 import es.uca.iw.web.OfertaController;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +19,7 @@ privileged aspect OfertaController_Roo_Controller_Finder {
     }
     
     @RequestMapping(params = "find=ByEstado", method = RequestMethod.GET)
-    public String OfertaController.findOfertasByEstado(@RequestParam("estado") Integer estado, @RequestParam(value = "page", required = false) Integer page, @RequestParam(value = "size", required = false) Integer size, @RequestParam(value = "sortFieldName", required = false) String sortFieldName, @RequestParam(value = "sortOrder", required = false) String sortOrder, Model uiModel) {
+    public String OfertaController.findOfertasByEstado(@RequestParam("estado") EstadoOfer estado, @RequestParam(value = "page", required = false) Integer page, @RequestParam(value = "size", required = false) Integer size, @RequestParam(value = "sortFieldName", required = false) String sortFieldName, @RequestParam(value = "sortOrder", required = false) String sortOrder, Model uiModel) {
         if (page != null || size != null) {
             int sizeNo = size == null ? 10 : size.intValue();
             final int firstResult = page == null ? 0 : (page.intValue() - 1) * sizeNo;
@@ -27,26 +28,6 @@ privileged aspect OfertaController_Roo_Controller_Finder {
             uiModel.addAttribute("maxPages", (int) ((nrOfPages > (int) nrOfPages || nrOfPages == 0.0) ? nrOfPages + 1 : nrOfPages));
         } else {
             uiModel.addAttribute("ofertas", Oferta.findOfertasByEstado(estado, sortFieldName, sortOrder).getResultList());
-        }
-        addDateTimeFormatPatterns(uiModel);
-        return "ofertas/list";
-    }
-    
-    @RequestMapping(params = { "find=ByIdSede", "form" }, method = RequestMethod.GET)
-    public String OfertaController.findOfertasByIdSedeForm(Model uiModel) {
-        return "ofertas/findOfertasByIdSede";
-    }
-    
-    @RequestMapping(params = "find=ByIdSede", method = RequestMethod.GET)
-    public String OfertaController.findOfertasByIdSede(@RequestParam("idSede") Integer idSede, @RequestParam(value = "page", required = false) Integer page, @RequestParam(value = "size", required = false) Integer size, @RequestParam(value = "sortFieldName", required = false) String sortFieldName, @RequestParam(value = "sortOrder", required = false) String sortOrder, Model uiModel) {
-        if (page != null || size != null) {
-            int sizeNo = size == null ? 10 : size.intValue();
-            final int firstResult = page == null ? 0 : (page.intValue() - 1) * sizeNo;
-            uiModel.addAttribute("ofertas", Oferta.findOfertasByIdSede(idSede, sortFieldName, sortOrder).setFirstResult(firstResult).setMaxResults(sizeNo).getResultList());
-            float nrOfPages = (float) Oferta.countFindOfertasByIdSede(idSede) / sizeNo;
-            uiModel.addAttribute("maxPages", (int) ((nrOfPages > (int) nrOfPages || nrOfPages == 0.0) ? nrOfPages + 1 : nrOfPages));
-        } else {
-            uiModel.addAttribute("ofertas", Oferta.findOfertasByIdSede(idSede, sortFieldName, sortOrder).getResultList());
         }
         addDateTimeFormatPatterns(uiModel);
         return "ofertas/list";

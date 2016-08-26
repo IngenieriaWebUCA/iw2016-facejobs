@@ -3,10 +3,12 @@
 
 package es.uca.iw.domain;
 
+import es.uca.iw.domain.Formacion;
 import es.uca.iw.domain.Inscripcion;
 import es.uca.iw.domain.Oferta;
 import es.uca.iw.domain.Puesto;
 import es.uca.iw.domain.Sede;
+import es.uca.iw.reference.EstadoOfer;
 import java.util.Date;
 
 privileged aspect Oferta_Roo_JavaBean {
@@ -27,20 +29,12 @@ privileged aspect Oferta_Roo_JavaBean {
         this.infoPuesto = infoPuesto;
     }
     
-    public Integer Oferta.getIdFormacion() {
+    public Formacion Oferta.getIdFormacion() {
         return this.idFormacion;
     }
     
-    public void Oferta.setIdFormacion(Integer idFormacion) {
+    public void Oferta.setIdFormacion(Formacion idFormacion) {
         this.idFormacion = idFormacion;
-    }
-    
-    public Integer Oferta.getIdSede() {
-        return this.idSede;
-    }
-    
-    public void Oferta.setIdSede(Integer idSede) {
-        this.idSede = idSede;
     }
     
     public Integer Oferta.getTipoContrato() {
@@ -99,11 +93,11 @@ privileged aspect Oferta_Roo_JavaBean {
         this.fecFinOferta = fecFinOferta;
     }
     
-    public Integer Oferta.getEstado() {
+    public EstadoOfer Oferta.getEstado() {
         return this.estado;
     }
     
-    public void Oferta.setEstado(Integer estado) {
+    public void Oferta.setEstado(EstadoOfer estado) {
         this.estado = estado;
     }
     

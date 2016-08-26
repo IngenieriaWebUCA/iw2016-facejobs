@@ -3,12 +3,15 @@
 
 package es.uca.iw.web;
 
+import es.uca.iw.domain.Formacion;
 import es.uca.iw.domain.Inscripcion;
 import es.uca.iw.domain.Oferta;
 import es.uca.iw.domain.Puesto;
 import es.uca.iw.domain.Sede;
+import es.uca.iw.reference.EstadoOfer;
 import es.uca.iw.web.OfertaController;
 import java.io.UnsupportedEncodingException;
+import java.util.Arrays;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import org.joda.time.format.DateTimeFormat;
@@ -100,9 +103,11 @@ privileged aspect OfertaController_Roo_Controller {
     void OfertaController.populateEditForm(Model uiModel, Oferta oferta) {
         uiModel.addAttribute("oferta", oferta);
         addDateTimeFormatPatterns(uiModel);
+        uiModel.addAttribute("formacions", Formacion.findAllFormacions());
         uiModel.addAttribute("inscripcions", Inscripcion.findAllInscripcions());
         uiModel.addAttribute("puestoes", Puesto.findAllPuestoes());
         uiModel.addAttribute("sedes", Sede.findAllSedes());
+        uiModel.addAttribute("estadoofers", Arrays.asList(EstadoOfer.values()));
     }
     
     String OfertaController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

@@ -4,24 +4,17 @@
 package es.uca.iw.domain;
 
 import es.uca.iw.domain.Oferta;
+import es.uca.iw.reference.EstadoOfer;
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
 
 privileged aspect Oferta_Roo_Finder {
     
-    public static Long Oferta.countFindOfertasByEstado(Integer estado) {
+    public static Long Oferta.countFindOfertasByEstado(EstadoOfer estado) {
         if (estado == null) throw new IllegalArgumentException("The estado argument is required");
         EntityManager em = Oferta.entityManager();
         TypedQuery q = em.createQuery("SELECT COUNT(o) FROM Oferta AS o WHERE o.estado = :estado", Long.class);
         q.setParameter("estado", estado);
-        return ((Long) q.getSingleResult());
-    }
-    
-    public static Long Oferta.countFindOfertasByIdSede(Integer idSede) {
-        if (idSede == null) throw new IllegalArgumentException("The idSede argument is required");
-        EntityManager em = Oferta.entityManager();
-        TypedQuery q = em.createQuery("SELECT COUNT(o) FROM Oferta AS o WHERE o.idSede = :idSede", Long.class);
-        q.setParameter("idSede", idSede);
         return ((Long) q.getSingleResult());
     }
     
@@ -56,7 +49,7 @@ privileged aspect Oferta_Roo_Finder {
         return ((Long) q.getSingleResult());
     }
     
-    public static TypedQuery<Oferta> Oferta.findOfertasByEstado(Integer estado) {
+    public static TypedQuery<Oferta> Oferta.findOfertasByEstado(EstadoOfer estado) {
         if (estado == null) throw new IllegalArgumentException("The estado argument is required");
         EntityManager em = Oferta.entityManager();
         TypedQuery<Oferta> q = em.createQuery("SELECT o FROM Oferta AS o WHERE o.estado = :estado", Oferta.class);
@@ -64,7 +57,7 @@ privileged aspect Oferta_Roo_Finder {
         return q;
     }
     
-    public static TypedQuery<Oferta> Oferta.findOfertasByEstado(Integer estado, String sortFieldName, String sortOrder) {
+    public static TypedQuery<Oferta> Oferta.findOfertasByEstado(EstadoOfer estado, String sortFieldName, String sortOrder) {
         if (estado == null) throw new IllegalArgumentException("The estado argument is required");
         EntityManager em = Oferta.entityManager();
         StringBuilder queryBuilder = new StringBuilder("SELECT o FROM Oferta AS o WHERE o.estado = :estado");
@@ -76,29 +69,6 @@ privileged aspect Oferta_Roo_Finder {
         }
         TypedQuery<Oferta> q = em.createQuery(queryBuilder.toString(), Oferta.class);
         q.setParameter("estado", estado);
-        return q;
-    }
-    
-    public static TypedQuery<Oferta> Oferta.findOfertasByIdSede(Integer idSede) {
-        if (idSede == null) throw new IllegalArgumentException("The idSede argument is required");
-        EntityManager em = Oferta.entityManager();
-        TypedQuery<Oferta> q = em.createQuery("SELECT o FROM Oferta AS o WHERE o.idSede = :idSede", Oferta.class);
-        q.setParameter("idSede", idSede);
-        return q;
-    }
-    
-    public static TypedQuery<Oferta> Oferta.findOfertasByIdSede(Integer idSede, String sortFieldName, String sortOrder) {
-        if (idSede == null) throw new IllegalArgumentException("The idSede argument is required");
-        EntityManager em = Oferta.entityManager();
-        StringBuilder queryBuilder = new StringBuilder("SELECT o FROM Oferta AS o WHERE o.idSede = :idSede");
-        if (fieldNames4OrderClauseFilter.contains(sortFieldName)) {
-            queryBuilder.append(" ORDER BY ").append(sortFieldName);
-            if ("ASC".equalsIgnoreCase(sortOrder) || "DESC".equalsIgnoreCase(sortOrder)) {
-                queryBuilder.append(" ").append(sortOrder);
-            }
-        }
-        TypedQuery<Oferta> q = em.createQuery(queryBuilder.toString(), Oferta.class);
-        q.setParameter("idSede", idSede);
         return q;
     }
     

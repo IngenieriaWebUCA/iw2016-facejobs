@@ -2,11 +2,16 @@ package es.uca.iw.domain;
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
 import org.springframework.roo.addon.tostring.RooToString;
+
+import es.uca.iw.reference.EstadoOfer;
+
 import javax.validation.constraints.NotNull;
 import java.util.Date;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import org.springframework.format.annotation.DateTimeFormat;
+
+import javax.persistence.Enumerated;
 import javax.persistence.ManyToOne;
 
 @RooJavaBean
@@ -16,19 +21,18 @@ public class Oferta {
 
     /**
      */
+	@NotNull
     private String titulo;
 
     /**
      */
+	@NotNull
     private String infoPuesto;
 
     /**
      */
-    private Integer idFormacion;
-
-    /**
-     */
-    private Integer idSede;
+    @ManyToOne
+    private Formacion idFormacion;
 
     /**
      */
@@ -66,7 +70,8 @@ public class Oferta {
 
     /**
      */
-    private Integer estado;
+    @Enumerated
+    private EstadoOfer estado;
 
     /**
      */

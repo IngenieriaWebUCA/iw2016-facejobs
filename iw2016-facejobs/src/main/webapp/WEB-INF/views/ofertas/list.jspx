@@ -9,7 +9,7 @@
             <table:column id="c_es_uca_iw_domain_Oferta_tipoContrato" property="tipoContrato" z="cv9oAyHzNcMvZt6FP4ooOb77Rm0="/>
             <table:column id="c_es_uca_iw_domain_Oferta_salarioBruto" property="salarioBruto" z="jV3WOanDZ7gN/shHMw5yY07eMdo="/>
             <table:column id="c_es_uca_iw_domain_Oferta_idFormacion" property="idFormacion" z="Yvj2ZAWgnQjlCVNVeDUM2hPa2zI="/>
-            <table:column id="c_es_uca_iw_domain_Oferta_idSede" property="idSede" z="K1upfAHqJQNTCZDHnxl85tZqoZc="/>
+            <table:column date="true" dateTimePattern="${oferta_fechainc_date_format}" id="c_es_uca_iw_domain_Oferta_fechaInc" property="fechaInc" z="jgTTAJVvlHsjyUBXKlpUHykNwIc="/>
         </table:table>
     </page:list>
 </div>

@@ -200,3 +200,5 @@ enum constant --name Masculino
 enum constant --name Femenino
 focus --class  ~.domain.demandante
 field enum --fieldName tipoSexo --type ~reference.tipoSx --notNull
+web mvc all --package ~.web
+web mvc all --package ~.web

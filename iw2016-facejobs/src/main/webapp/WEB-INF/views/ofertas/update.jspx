@@ -3,8 +3,8 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:update id="fu_es_uca_iw_domain_Oferta" modelAttribute="oferta" path="/ofertas" versionField="Version" z="aERhRmBEmwgXRA8KcHRwedggStE=">
-        <field:input field="titulo" id="c_es_uca_iw_domain_Oferta_titulo" z="bUGgvvas7VPQekClVT+KuY7BocA="/>
-        <field:input field="infoPuesto" id="c_es_uca_iw_domain_Oferta_infoPuesto" z="xLHtfGgY7IBWY7A/Htzg4pHvZj0="/>
+        <field:input field="titulo" id="c_es_uca_iw_domain_Oferta_titulo" required="true" z="vHS0gzldXjGxn/x86iRX8IHCJdI="/>
+        <field:input field="infoPuesto" id="c_es_uca_iw_domain_Oferta_infoPuesto" required="true" z="Jrtq8D5ub0Ag4umRd8MSJzqSeW8="/>
         <field:input field="tipoContrato" id="c_es_uca_iw_domain_Oferta_tipoContrato" validationMessageCode="field_invalid_integer" z="vUbhxTlliBxnrpkwkS7ItyzGxfA="/>
         <field:input field="salarioBruto" id="c_es_uca_iw_domain_Oferta_salarioBruto" validationMessageCode="field_invalid_integer" z="tQUfOB+cR6TufCRDiNcUXztn8qI="/>
         <field:datetime dateTimePattern="${oferta_fechainc_date_format}" field="fechaInc" id="c_es_uca_iw_domain_Oferta_fechaInc" z="sJgwUptKPWI+uhgK3MP76ZE5cdA="/>
@@ -15,8 +15,7 @@
         <field:select field="idSedeOferta" id="c_es_uca_iw_domain_Oferta_idSedeOferta" itemValue="id" items="${sedes}" path="/sedes" z="8qbuwK98gHWbyWM+yzKqZlMu++Q="/>
         <field:select field="idInscripcionOferta" id="c_es_uca_iw_domain_Oferta_idInscripcionOferta" itemValue="id" items="${inscripcions}" path="/inscripcions" z="zIvZr7cMTSkuDK6ByFPcerc8t3g="/>
         <field:select field="idPuestoOferta" id="c_es_uca_iw_domain_Oferta_idPuestoOferta" itemValue="id" items="${puestoes}" path="/puestoes" z="GThl3kVmHJmpSunz90R3TekWk+Q="/>
-        <field:input field="estado" id="c_es_uca_iw_domain_Oferta_estado" validationMessageCode="field_invalid_integer" z="afhYiHpG2mu7dOb26BhNT7TxvH4="/>
-        <field:input field="idFormacion" id="c_es_uca_iw_domain_Oferta_idFormacion" validationMessageCode="field_invalid_integer" z="dPYPosztqDagD6awI/0ayuNV8RM="/>
-        <field:input field="idSede" id="c_es_uca_iw_domain_Oferta_idSede" validationMessageCode="field_invalid_integer" z="k+MtWfJfFGrqfUHodIN+n9Wqeko="/>
+        <field:select field="idFormacion" id="c_es_uca_iw_domain_Oferta_idFormacion" itemValue="id" items="${formacions}" path="/formacions" z="urXF9rP3hDhd0bkVSN2BSN9Trpo="/>
+        <field:select field="estado" id="c_es_uca_iw_domain_Oferta_estado" items="${estadoofers}" path="estadoofers" z="BRLTc2sN8nkIg/bXocj5uPKWKPI="/>
     </form:update>
 </div>

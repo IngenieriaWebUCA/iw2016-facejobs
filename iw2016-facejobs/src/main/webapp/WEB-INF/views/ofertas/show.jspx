@@ -15,8 +15,7 @@
         <field:display field="idSedeOferta" id="s_es_uca_iw_domain_Oferta_idSedeOferta" object="${oferta}" z="+KR+Vydj4+XAtKrVJoNMvfD/Xx8="/>
         <field:display field="idInscripcionOferta" id="s_es_uca_iw_domain_Oferta_idInscripcionOferta" object="${oferta}" z="aXQLa+BncHuEUi4p0xM6hJFIMBY="/>
         <field:display field="idPuestoOferta" id="s_es_uca_iw_domain_Oferta_idPuestoOferta" object="${oferta}" z="UAi02LV75DllTto1Z9H2jo1AKb0="/>
-        <field:display field="estado" id="s_es_uca_iw_domain_Oferta_estado" object="${oferta}" z="1GRG3Bh882Hj/juM1Hf9PAeNpo8="/>
         <field:display field="idFormacion" id="s_es_uca_iw_domain_Oferta_idFormacion" object="${oferta}" z="TF+KIxbUAQ6SyjHK4D00ttm2bHo="/>
-        <field:display field="idSede" id="s_es_uca_iw_domain_Oferta_idSede" object="${oferta}" z="Civ4hXBkDDTSRUKS+MtDeI3127M="/>
+        <field:display field="estado" id="s_es_uca_iw_domain_Oferta_estado" object="${oferta}" z="1GRG3Bh882Hj/juM1Hf9PAeNpo8="/>
     </page:show>
 </div>

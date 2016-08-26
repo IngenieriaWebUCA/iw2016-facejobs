@@ -44,7 +44,6 @@
             <menu:item id="fi_oferta_tipocontrato" messageCode="global_menu_find" url="/ofertas?find=ByTipoContrato&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="lOcC472oV51yDyxQ+lNlw8dzDy0="/>
             <menu:item id="fi_oferta_titulo" messageCode="global_menu_find" url="/ofertas?find=ByTitulo&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="lCEY0XIU9CKr5bqiTXVyWrcx72M="/>
             <menu:item id="fi_oferta_titulolike" messageCode="global_menu_find" url="/ofertas?find=ByTituloLike&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="OCVVu6QcnDsYEARmZvNZoALbZUE="/>
-            <menu:item id="fi_oferta_idsede" messageCode="global_menu_find" url="/ofertas?find=ByIdSede&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="J32/dLJ7Elf2fgrJr9bPCWTaSn4="/>
         </menu:category>
         <menu:category id="c_tipoformacion" z="93W0FQt/d1F/U3EaB2bV+s0bwjs=">
             <menu:item id="i_tipoformacion_new" messageCode="global_menu_new" url="/tipoformacions?form" z="HZO3NxOfMQRShRoIXHqW8awz+G8="/>

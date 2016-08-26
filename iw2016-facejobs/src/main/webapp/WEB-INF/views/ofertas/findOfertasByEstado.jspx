@@ -3,6 +3,6 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:find finderName="ByEstado" id="ff_es_uca_iw_domain_Oferta" path="/ofertas" z="UcYDfSFi2juJS0l0iTpMbeM0KAE=">
-        <field:input disableFormBinding="true" field="estado" id="f_es_uca_iw_domain_Oferta_estado" required="true" validationMessageCode="field_invalid_integer" z="cNh2hYxghI40GmZlfRvOGl7Dhaw="/>
+        <field:select disableFormBinding="true" field="estado" id="f_es_uca_iw_domain_Oferta_estado" items="${estadoofers}" path="/estadoofers" required="true" z="zpklNGmD5Yx9Ik55NjerfB+Hv48="/>
     </form:find>
 </div>
