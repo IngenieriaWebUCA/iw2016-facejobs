@@ -14,11 +14,6 @@ public class Inscripcion {
 
     /**
      */
-    @NotNull
-    private Integer idExperiencia;
-
-    /**
-     */
     @ManyToOne
     private Demandante idDemandante;
 

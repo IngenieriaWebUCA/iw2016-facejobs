@@ -14,7 +14,7 @@ privileged aspect Inscripcion_Roo_Jpa_ActiveRecord {
     @PersistenceContext
     transient EntityManager Inscripcion.entityManager;
     
-    public static final List<String> Inscripcion.fieldNames4OrderClauseFilter = java.util.Arrays.asList("idExperiencia", "idDemandante", "idOferta", "estado");
+    public static final List<String> Inscripcion.fieldNames4OrderClauseFilter = java.util.Arrays.asList("idDemandante", "idOferta", "estado");
     
     public static final EntityManager Inscripcion.entityManager() {
         EntityManager em = new Inscripcion().entityManager;

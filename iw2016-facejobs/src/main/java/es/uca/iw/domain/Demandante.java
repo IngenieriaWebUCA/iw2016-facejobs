@@ -9,6 +9,9 @@ import javax.persistence.TemporalType;
 import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.ManyToOne;
 
+import es.uca.iw.reference.TipoSexo;
+import javax.persistence.Enumerated;
+
 @RooJavaBean
 @RooToString
 @RooJpaActiveRecord(finders = { "findDemandantesByTrabajosDisp" })
@@ -16,17 +19,14 @@ public class Demandante {
 
     /**
      */
+    @NotNull
     private String nombre;
 
     /**
      */
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
-    private Date facNac;
-
-    /**
-     */
-    private Integer sexo;
+    private Date fecNac;
 
     /**
      */
@@ -39,10 +39,6 @@ public class Demandante {
     /**
      */
     private String telefono;
-
-    /**
-     */
-    private Integer idusuario;
 
     /**
      */
@@ -84,4 +80,10 @@ public class Demandante {
      */
     @ManyToOne
     private Formaciondemandante idFormacionDemandanteDemandante;
+
+    /**
+     */
+    @NotNull
+    @Enumerated
+    private TipoSexo tipoSexo;
 }

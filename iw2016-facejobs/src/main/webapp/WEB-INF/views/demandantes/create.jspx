@@ -3,9 +3,7 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_es_uca_iw_domain_Demandante" modelAttribute="demandante" path="/demandantes" render="${empty dependencies}" z="iT/gWE2VQl/J+G+b5RTEZWDvre4=">
-        <field:input field="nombre" id="c_es_uca_iw_domain_Demandante_nombre" z="+BrLfy4IVEmh9635np6C4oxU1Ic="/>
-        <field:datetime dateTimePattern="${demandante_facnac_date_format}" field="facNac" id="c_es_uca_iw_domain_Demandante_facNac" z="dvDuyqdXV8BJe2mmRM5P/3mAjl4="/>
-        <field:input field="sexo" id="c_es_uca_iw_domain_Demandante_sexo" validationMessageCode="field_invalid_integer" z="fH1QoA2/zvJ6G67zEntatt3WeY4="/>
+        <field:input field="nombre" id="c_es_uca_iw_domain_Demandante_nombre" required="true" z="gvEUYjKh506Z/hlVjJUVHLekJCo="/>
         <field:input field="direccion" id="c_es_uca_iw_domain_Demandante_direccion" z="9tI2XeKAlSIauJs2taXyZtK16hI="/>
         <field:input field="email" id="c_es_uca_iw_domain_Demandante_email" validationMessageCode="field_invalid_email" z="Xkp0sx5/8wNRN41Sw3vJQi/PfOQ="/>
         <field:input field="telefono" id="c_es_uca_iw_domain_Demandante_telefono" z="RLszve3jHqN1vy7aTTZTHhmndRU="/>
@@ -17,8 +15,9 @@
         <field:select field="idPuestoDemandante" id="c_es_uca_iw_domain_Demandante_idPuestoDemandante" itemValue="id" items="${puestoes}" path="/puestoes" z="up5/LVWd+gfiuUUUvOlXT/bJ730="/>
         <field:select field="idFormacionDemandanteDemandante" id="c_es_uca_iw_domain_Demandante_idFormacionDemandanteDemandante" itemValue="id" items="${formaciondemandantes}" path="/formaciondemandantes" z="50zkHBf0PqupPYCfD0V3IkVb4ec="/>
         <field:select field="idInscripcionDemandante" id="c_es_uca_iw_domain_Demandante_idInscripcionDemandante" itemValue="id" items="${inscripcions}" path="/inscripcions" z="SOrfM4eShqY4AyOu5Ui578XMLHQ="/>
-        <field:input field="idusuario" id="c_es_uca_iw_domain_Demandante_idusuario" validationMessageCode="field_invalid_integer" z="pBUDyFWU59tX6WIYYhVR041hGcw="/>
         <field:input field="experiencia" id="c_es_uca_iw_domain_Demandante_experiencia" z="8o2EUWGQlkBhFpzsI20/tFDcRHs="/>
+        <field:datetime dateTimePattern="${demandante_fecnac_date_format}" field="fecNac" id="c_es_uca_iw_domain_Demandante_fecNac" z="FKgNrOEnXeLPX6CRPImgBzA9Ewk="/>
+        <field:select field="tipoSexo" id="c_es_uca_iw_domain_Demandante_tipoSexo" items="${tiposexoes}" path="tiposexoes" required="true" z="VCOeW7XOxuJ6G+lp5PspUhZmV8I="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_es_uca_iw_domain_Demandante" render="${not empty dependencies}" z="UJ++bQgbqg84XDX6V5J9jNinL8w="/>
 </div>

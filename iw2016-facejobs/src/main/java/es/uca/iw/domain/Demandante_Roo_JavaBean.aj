@@ -8,6 +8,7 @@ import es.uca.iw.domain.Formaciondemandante;
 import es.uca.iw.domain.Inscripcion;
 import es.uca.iw.domain.Puesto;
 import es.uca.iw.domain.Usuario;
+import es.uca.iw.reference.TipoSexo;
 import java.util.Date;
 
 privileged aspect Demandante_Roo_JavaBean {
@@ -20,20 +21,12 @@ privileged aspect Demandante_Roo_JavaBean {
         this.nombre = nombre;
     }
     
-    public Date Demandante.getFacNac() {
-        return this.facNac;
+    public Date Demandante.getFecNac() {
+        return this.fecNac;
     }
     
-    public void Demandante.setFacNac(Date facNac) {
-        this.facNac = facNac;
-    }
-    
-    public Integer Demandante.getSexo() {
-        return this.sexo;
-    }
-    
-    public void Demandante.setSexo(Integer sexo) {
-        this.sexo = sexo;
+    public void Demandante.setFecNac(Date fecNac) {
+        this.fecNac = fecNac;
     }
     
     public String Demandante.getDireccion() {
@@ -58,14 +51,6 @@ privileged aspect Demandante_Roo_JavaBean {
     
     public void Demandante.setTelefono(String telefono) {
         this.telefono = telefono;
-    }
-    
-    public Integer Demandante.getIdusuario() {
-        return this.idusuario;
-    }
-    
-    public void Demandante.setIdusuario(Integer idusuario) {
-        this.idusuario = idusuario;
     }
     
     public String Demandante.getResumenTray() {
@@ -138,6 +123,14 @@ privileged aspect Demandante_Roo_JavaBean {
     
     public void Demandante.setIdFormacionDemandanteDemandante(Formaciondemandante idFormacionDemandanteDemandante) {
         this.idFormacionDemandanteDemandante = idFormacionDemandanteDemandante;
+    }
+    
+    public TipoSexo Demandante.getTipoSexo() {
+        return this.tipoSexo;
+    }
+    
+    public void Demandante.setTipoSexo(TipoSexo tipoSexo) {
+        this.tipoSexo = tipoSexo;
     }
     
 }

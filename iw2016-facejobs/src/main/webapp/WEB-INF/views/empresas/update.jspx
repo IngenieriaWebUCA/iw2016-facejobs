@@ -3,8 +3,8 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:update id="fu_es_uca_iw_domain_Empresa" modelAttribute="empresa" path="/empresas" versionField="Version" z="fJN+MoudpKC4mS8rYd85ZtBhxFg=">
-        <field:input field="nombre" id="c_es_uca_iw_domain_Empresa_nombre" z="cW97QgbhU41r/6kKbxhutLX7vh4="/>
-        <field:input field="cif" id="c_es_uca_iw_domain_Empresa_cif" z="OWmsqf53uPxGqp4gMvNClWOf6qM="/>
+        <field:input field="nombre" id="c_es_uca_iw_domain_Empresa_nombre" required="true" z="FlNg4Zb8aypMrSHZzXyjOJ+h61c="/>
+        <field:input field="cif" id="c_es_uca_iw_domain_Empresa_cif" required="true" z="iMpn02Eb7GsPrAP/ubrz2ZVLJB8="/>
         <field:input field="email" id="c_es_uca_iw_domain_Empresa_email" validationMessageCode="field_invalid_email" z="dY80NssvQPKqsFSFo+Go9RdGNU0="/>
         <field:input field="actProf" id="c_es_uca_iw_domain_Empresa_actProf" z="2eEsUkKpziApjhIaAS4cIalPL2o="/>
         <field:input field="numEmp" id="c_es_uca_iw_domain_Empresa_numEmp" validationMessageCode="field_invalid_integer" z="mlMOKVJWYxYAr5Nsx8m7FqMUZpw="/>

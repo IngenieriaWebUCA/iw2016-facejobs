@@ -6,10 +6,10 @@
         <table:table data="${ofertas}" id="l_es_uca_iw_domain_Oferta" path="/ofertas" z="ESDhsKFcZuxbW9kejPyh99i3w2s=">
             <table:column id="c_es_uca_iw_domain_Oferta_titulo" property="titulo" z="TbZ2vPw5PEOvGh4bRi1W8f/+B1E="/>
             <table:column id="c_es_uca_iw_domain_Oferta_infoPuesto" property="infoPuesto" z="fQsKd3FPklPyqluWyj1Z3TYyb0s="/>
-            <table:column id="c_es_uca_iw_domain_Oferta_idFormacion" property="idFormacion" z="Yvj2ZAWgnQjlCVNVeDUM2hPa2zI="/>
-            <table:column id="c_es_uca_iw_domain_Oferta_idSede" property="idSede" z="K1upfAHqJQNTCZDHnxl85tZqoZc="/>
             <table:column id="c_es_uca_iw_domain_Oferta_tipoContrato" property="tipoContrato" z="cv9oAyHzNcMvZt6FP4ooOb77Rm0="/>
             <table:column id="c_es_uca_iw_domain_Oferta_salarioBruto" property="salarioBruto" z="jV3WOanDZ7gN/shHMw5yY07eMdo="/>
+            <table:column id="c_es_uca_iw_domain_Oferta_idFormacion" property="idFormacion" z="Yvj2ZAWgnQjlCVNVeDUM2hPa2zI="/>
+            <table:column id="c_es_uca_iw_domain_Oferta_idSede" property="idSede" z="K1upfAHqJQNTCZDHnxl85tZqoZc="/>
         </table:table>
     </page:list>
 </div>

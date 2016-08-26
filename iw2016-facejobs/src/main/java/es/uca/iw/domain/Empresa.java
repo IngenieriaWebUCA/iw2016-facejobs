@@ -12,10 +12,12 @@ public class Empresa {
 
     /**
      */
+	@NotNull
     private String nombre;
 
     /**
      */
+    @NotNull
     private String cif;
 
     /**

@@ -5,11 +5,11 @@
     <page:list id="pl_es_uca_iw_domain_Demandante" items="${demandantes}" z="zusogK/3/podrIJFCilVwIdmWss=">
         <table:table data="${demandantes}" id="l_es_uca_iw_domain_Demandante" path="/demandantes" z="bA9GUQKnibkxH/PxhzTwHDIysSg=">
             <table:column id="c_es_uca_iw_domain_Demandante_nombre" property="nombre" z="a+9Kuwo3EJ9lRAnNNGT0IrCVJJw="/>
-            <table:column date="true" dateTimePattern="${demandante_facnac_date_format}" id="c_es_uca_iw_domain_Demandante_facNac" property="facNac" z="BeK0UDe+u+XqJtdRaIwoec+sntw="/>
-            <table:column id="c_es_uca_iw_domain_Demandante_sexo" property="sexo" z="flGJ4FrrvrSj5tJytNUnbLSzJAw="/>
             <table:column id="c_es_uca_iw_domain_Demandante_direccion" property="direccion" z="hajq+KjqXRTlTXvU9uN/6zfEmDM="/>
             <table:column id="c_es_uca_iw_domain_Demandante_email" property="email" z="F/2ZODdxMUQgExyDEHXsETozOA4="/>
             <table:column id="c_es_uca_iw_domain_Demandante_telefono" property="telefono" z="V7d94ty2/e2zokKjENUSdWVg/To="/>
+            <table:column date="true" dateTimePattern="${demandante_fecnac_date_format}" id="c_es_uca_iw_domain_Demandante_fecNac" property="fecNac" z="y42XPgqBeyfbqrn8k9k3odkBNb4="/>
+            <table:column id="c_es_uca_iw_domain_Demandante_resumenTray" property="resumenTray" z="LP1wgzr0ihpJltEk34eDqw/xsbw="/>
         </table:table>
     </page:list>
 </div>

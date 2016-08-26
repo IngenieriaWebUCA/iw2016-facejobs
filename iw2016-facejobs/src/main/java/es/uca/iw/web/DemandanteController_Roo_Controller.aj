@@ -8,8 +8,10 @@ import es.uca.iw.domain.Formaciondemandante;
 import es.uca.iw.domain.Inscripcion;
 import es.uca.iw.domain.Puesto;
 import es.uca.iw.domain.Usuario;
+import es.uca.iw.reference.TipoSexo;
 import es.uca.iw.web.DemandanteController;
 import java.io.UnsupportedEncodingException;
+import java.util.Arrays;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import org.joda.time.format.DateTimeFormat;
@@ -93,7 +95,7 @@ privileged aspect DemandanteController_Roo_Controller {
     }
     
     void DemandanteController.addDateTimeFormatPatterns(Model uiModel) {
-        uiModel.addAttribute("demandante_facnac_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
+        uiModel.addAttribute("demandante_fecnac_date_format", DateTimeFormat.patternForStyle("M-", LocaleContextHolder.getLocale()));
     }
     
     void DemandanteController.populateEditForm(Model uiModel, Demandante demandante) {
@@ -104,6 +106,7 @@ privileged aspect DemandanteController_Roo_Controller {
         uiModel.addAttribute("inscripcions", Inscripcion.findAllInscripcions());
         uiModel.addAttribute("puestoes", Puesto.findAllPuestoes());
         uiModel.addAttribute("usuarios", Usuario.findAllUsuarios());
+        uiModel.addAttribute("tiposexoes", Arrays.asList(TipoSexo.values()));
     }
     
     String DemandanteController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

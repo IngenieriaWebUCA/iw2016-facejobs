@@ -4,8 +4,6 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_es_uca_iw_domain_Demandante" object="${demandante}" path="/demandantes" z="u3Kvm0BOX6UH+2eQRLO+9uxABeo=">
         <field:display field="nombre" id="s_es_uca_iw_domain_Demandante_nombre" object="${demandante}" z="qHCaRlvylVnRNuuOXSQJDf0EbBQ="/>
-        <field:display date="true" dateTimePattern="${demandante_facnac_date_format}" field="facNac" id="s_es_uca_iw_domain_Demandante_facNac" object="${demandante}" z="6PYOywZ7G7SKKmVjAsHxK72YVkM="/>
-        <field:display field="sexo" id="s_es_uca_iw_domain_Demandante_sexo" object="${demandante}" z="0vHyw6aA2BxlhCEvo0jyPAbQESE="/>
         <field:display field="direccion" id="s_es_uca_iw_domain_Demandante_direccion" object="${demandante}" z="q/4cqkT27AxeehDvxkvvwq99r+k="/>
         <field:display field="email" id="s_es_uca_iw_domain_Demandante_email" object="${demandante}" z="otplh++eiRw0RN753LYQMd39Mlc="/>
         <field:display field="telefono" id="s_es_uca_iw_domain_Demandante_telefono" object="${demandante}" z="XvHCKUs6tc1tP0iXTAFMxC8u6D8="/>
@@ -17,7 +15,8 @@
         <field:display field="idPuestoDemandante" id="s_es_uca_iw_domain_Demandante_idPuestoDemandante" object="${demandante}" z="GFGwepbzTRshUPsvwcWxOtDtKWM="/>
         <field:display field="idFormacionDemandanteDemandante" id="s_es_uca_iw_domain_Demandante_idFormacionDemandanteDemandante" object="${demandante}" z="Ok5cEhMQjJ+TpQi3GzOFcP73Yl4="/>
         <field:display field="idInscripcionDemandante" id="s_es_uca_iw_domain_Demandante_idInscripcionDemandante" object="${demandante}" z="miA0x3GJVtNMi92KdFZvUQm/QdE="/>
-        <field:display field="idusuario" id="s_es_uca_iw_domain_Demandante_idusuario" object="${demandante}" z="r8hlgH7kLqOM4sNYtyvUW6EmAvQ="/>
         <field:display field="experiencia" id="s_es_uca_iw_domain_Demandante_experiencia" object="${demandante}" z="iuoNhXWoFpv2gdeUN0zWJAd2OUQ="/>
+        <field:display date="true" dateTimePattern="${demandante_fecnac_date_format}" field="fecNac" id="s_es_uca_iw_domain_Demandante_fecNac" object="${demandante}" z="xgQQ4Ve6UuTUUUpw7YwUDfztF0o="/>
+        <field:display field="tipoSexo" id="s_es_uca_iw_domain_Demandante_tipoSexo" object="${demandante}" z="+Ayzw4MLznXnb0+sV+d21LWcfr4="/>
     </page:show>
 </div>

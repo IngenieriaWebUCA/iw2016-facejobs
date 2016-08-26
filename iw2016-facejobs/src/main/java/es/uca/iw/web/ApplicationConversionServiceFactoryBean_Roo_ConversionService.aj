@@ -51,7 +51,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<Demandante, String> ApplicationConversionServiceFactoryBean.getDemandanteToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<es.uca.iw.domain.Demandante, java.lang.String>() {
             public String convert(Demandante demandante) {
-                return new StringBuilder().append(demandante.getNombre()).append(' ').append(demandante.getFacNac()).append(' ').append(demandante.getSexo()).append(' ').append(demandante.getDireccion()).toString();
+                return new StringBuilder().append(demandante.getNombre()).append(' ').append(demandante.getFecNac()).append(' ').append(demandante.getDireccion()).append(' ').append(demandante.getEmail()).toString();
             }
         };
     }
@@ -171,7 +171,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<Inscripcion, String> ApplicationConversionServiceFactoryBean.getInscripcionToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<es.uca.iw.domain.Inscripcion, java.lang.String>() {
             public String convert(Inscripcion inscripcion) {
-                return new StringBuilder().append(inscripcion.getIdExperiencia()).toString();
+                return "(no displayable fields)";
             }
         };
     }
