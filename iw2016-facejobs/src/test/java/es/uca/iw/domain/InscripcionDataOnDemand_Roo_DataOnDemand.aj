@@ -6,7 +6,7 @@ package es.uca.iw.domain;
 import es.uca.iw.domain.DemandanteDataOnDemand;
 import es.uca.iw.domain.Inscripcion;
 import es.uca.iw.domain.InscripcionDataOnDemand;
-import es.uca.iw.domain.Oferta;
+import es.uca.iw.domain.OfertaDataOnDemand;
 import es.uca.iw.reference.EstadoIns;
 import java.security.SecureRandom;
 import java.util.ArrayList;
@@ -29,21 +29,18 @@ privileged aspect InscripcionDataOnDemand_Roo_DataOnDemand {
     @Autowired
     DemandanteDataOnDemand InscripcionDataOnDemand.demandanteDataOnDemand;
     
+    @Autowired
+    OfertaDataOnDemand InscripcionDataOnDemand.ofertaDataOnDemand;
+    
     public Inscripcion InscripcionDataOnDemand.getNewTransientInscripcion(int index) {
         Inscripcion obj = new Inscripcion();
         setEstado(obj, index);
-        setIdOferta(obj, index);
         return obj;
     }
     
     public void InscripcionDataOnDemand.setEstado(Inscripcion obj, int index) {
         EstadoIns estado = EstadoIns.class.getEnumConstants()[0];
         obj.setEstado(estado);
-    }
-    
-    public void InscripcionDataOnDemand.setIdOferta(Inscripcion obj, int index) {
-        Oferta idOferta = null;
-        obj.setIdOferta(idOferta);
     }
     
     public Inscripcion InscripcionDataOnDemand.getSpecificInscripcion(int index) {

@@ -9,7 +9,6 @@ import es.uca.iw.domain.Oferta;
 import es.uca.iw.reference.EstadoIns;
 
 privileged aspect Inscripcion_Roo_JavaBean {
-
     
     public Demandante Inscripcion.getIdDemandante() {
         return this.idDemandante;

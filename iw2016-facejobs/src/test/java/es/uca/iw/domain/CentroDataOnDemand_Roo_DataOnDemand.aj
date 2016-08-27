@@ -5,7 +5,7 @@ package es.uca.iw.domain;
 
 import es.uca.iw.domain.Centro;
 import es.uca.iw.domain.CentroDataOnDemand;
-import es.uca.iw.domain.Formaciondemandante;
+import es.uca.iw.domain.FormaciondemandanteDataOnDemand;
 import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Random;
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 privileged aspect CentroDataOnDemand_Roo_DataOnDemand {
@@ -23,16 +24,13 @@ privileged aspect CentroDataOnDemand_Roo_DataOnDemand {
     
     private List<Centro> CentroDataOnDemand.data;
     
+    @Autowired
+    FormaciondemandanteDataOnDemand CentroDataOnDemand.formaciondemandanteDataOnDemand;
+    
     public Centro CentroDataOnDemand.getNewTransientCentro(int index) {
         Centro obj = new Centro();
-        setIdFormacionDemandanteCentro(obj, index);
         setNombre(obj, index);
         return obj;
-    }
-    
-    public void CentroDataOnDemand.setIdFormacionDemandanteCentro(Centro obj, int index) {
-        Formaciondemandante idFormacionDemandanteCentro = null;
-        obj.setIdFormacionDemandanteCentro(idFormacionDemandanteCentro);
     }
     
     public void CentroDataOnDemand.setNombre(Centro obj, int index) {

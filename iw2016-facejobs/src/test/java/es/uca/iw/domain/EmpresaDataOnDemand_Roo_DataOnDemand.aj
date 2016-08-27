@@ -5,7 +5,7 @@ package es.uca.iw.domain;
 
 import es.uca.iw.domain.Empresa;
 import es.uca.iw.domain.EmpresaDataOnDemand;
-import es.uca.iw.domain.Usuario;
+import es.uca.iw.domain.UsuarioDataOnDemand;
 import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Random;
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 privileged aspect EmpresaDataOnDemand_Roo_DataOnDemand {
@@ -23,12 +24,14 @@ privileged aspect EmpresaDataOnDemand_Roo_DataOnDemand {
     
     private List<Empresa> EmpresaDataOnDemand.data;
     
+    @Autowired
+    UsuarioDataOnDemand EmpresaDataOnDemand.usuarioDataOnDemand;
+    
     public Empresa EmpresaDataOnDemand.getNewTransientEmpresa(int index) {
         Empresa obj = new Empresa();
         setActProf(obj, index);
         setCif(obj, index);
         setEmail(obj, index);
-        setIdusuarioEmp(obj, index);
         setNombre(obj, index);
         setNumEmp(obj, index);
         return obj;
@@ -47,11 +50,6 @@ privileged aspect EmpresaDataOnDemand_Roo_DataOnDemand {
     public void EmpresaDataOnDemand.setEmail(Empresa obj, int index) {
         String email = "foo" + index + "@bar.com";
         obj.setEmail(email);
-    }
-    
-    public void EmpresaDataOnDemand.setIdusuarioEmp(Empresa obj, int index) {
-        Usuario idusuarioEmp = null;
-        obj.setIdusuarioEmp(idusuarioEmp);
     }
     
     public void EmpresaDataOnDemand.setNombre(Empresa obj, int index) {

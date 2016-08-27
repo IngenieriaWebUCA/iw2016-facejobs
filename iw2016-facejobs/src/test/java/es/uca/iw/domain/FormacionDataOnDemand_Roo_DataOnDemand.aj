@@ -5,7 +5,7 @@ package es.uca.iw.domain;
 
 import es.uca.iw.domain.Formacion;
 import es.uca.iw.domain.FormacionDataOnDemand;
-import es.uca.iw.domain.Tipoformacion;
+import es.uca.iw.domain.TipoformacionDataOnDemand;
 import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Random;
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 privileged aspect FormacionDataOnDemand_Roo_DataOnDemand {
@@ -23,17 +24,14 @@ privileged aspect FormacionDataOnDemand_Roo_DataOnDemand {
     
     private List<Formacion> FormacionDataOnDemand.data;
     
+    @Autowired
+    TipoformacionDataOnDemand FormacionDataOnDemand.tipoformacionDataOnDemand;
+    
     public Formacion FormacionDataOnDemand.getNewTransientFormacion(int index) {
         Formacion obj = new Formacion();
-        setIdTipoFormacion(obj, index);
         setNivel(obj, index);
         setTitulacion(obj, index);
         return obj;
-    }
-    
-    public void FormacionDataOnDemand.setIdTipoFormacion(Formacion obj, int index) {
-        Tipoformacion idTipoFormacion = null;
-        obj.setIdTipoFormacion(idTipoFormacion);
     }
     
     public void FormacionDataOnDemand.setNivel(Formacion obj, int index) {

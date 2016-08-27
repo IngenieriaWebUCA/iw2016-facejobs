@@ -5,10 +5,10 @@ package es.uca.iw.domain;
 
 import es.uca.iw.domain.Demandante;
 import es.uca.iw.domain.DemandanteDataOnDemand;
-import es.uca.iw.domain.Formaciondemandante;
-import es.uca.iw.domain.Inscripcion;
-import es.uca.iw.domain.Puesto;
-import es.uca.iw.domain.Usuario;
+import es.uca.iw.domain.FormaciondemandanteDataOnDemand;
+import es.uca.iw.domain.InscripcionDataOnDemand;
+import es.uca.iw.domain.PuestoDataOnDemand;
+import es.uca.iw.domain.UsuarioDataOnDemand;
 import es.uca.iw.reference.TipoSexo;
 import java.security.SecureRandom;
 import java.util.ArrayList;
@@ -20,6 +20,7 @@ import java.util.List;
 import java.util.Random;
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 privileged aspect DemandanteDataOnDemand_Roo_DataOnDemand {
@@ -30,6 +31,18 @@ privileged aspect DemandanteDataOnDemand_Roo_DataOnDemand {
     
     private List<Demandante> DemandanteDataOnDemand.data;
     
+    @Autowired
+    FormaciondemandanteDataOnDemand DemandanteDataOnDemand.formaciondemandanteDataOnDemand;
+    
+    @Autowired
+    InscripcionDataOnDemand DemandanteDataOnDemand.inscripcionDataOnDemand;
+    
+    @Autowired
+    PuestoDataOnDemand DemandanteDataOnDemand.puestoDataOnDemand;
+    
+    @Autowired
+    UsuarioDataOnDemand DemandanteDataOnDemand.usuarioDataOnDemand;
+    
     public Demandante DemandanteDataOnDemand.getNewTransientDemandante(int index) {
         Demandante obj = new Demandante();
         setDireccion(obj, index);
@@ -38,10 +51,6 @@ privileged aspect DemandanteDataOnDemand_Roo_DataOnDemand {
         setFecNac(obj, index);
         setFoto(obj, index);
         setIdExperienciaDemandante(obj, index);
-        setIdFormacionDemandanteDemandante(obj, index);
-        setIdInscripcionDemandante(obj, index);
-        setIdPuestoDemandante(obj, index);
-        setIdusuarioDem(obj, index);
         setNombre(obj, index);
         setResumenTray(obj, index);
         setTelefono(obj, index);
@@ -78,26 +87,6 @@ privileged aspect DemandanteDataOnDemand_Roo_DataOnDemand {
     public void DemandanteDataOnDemand.setIdExperienciaDemandante(Demandante obj, int index) {
         Demandante idExperienciaDemandante = obj;
         obj.setIdExperienciaDemandante(idExperienciaDemandante);
-    }
-    
-    public void DemandanteDataOnDemand.setIdFormacionDemandanteDemandante(Demandante obj, int index) {
-        Formaciondemandante idFormacionDemandanteDemandante = null;
-        obj.setIdFormacionDemandanteDemandante(idFormacionDemandanteDemandante);
-    }
-    
-    public void DemandanteDataOnDemand.setIdInscripcionDemandante(Demandante obj, int index) {
-        Inscripcion idInscripcionDemandante = null;
-        obj.setIdInscripcionDemandante(idInscripcionDemandante);
-    }
-    
-    public void DemandanteDataOnDemand.setIdPuestoDemandante(Demandante obj, int index) {
-        Puesto idPuestoDemandante = null;
-        obj.setIdPuestoDemandante(idPuestoDemandante);
-    }
-    
-    public void DemandanteDataOnDemand.setIdusuarioDem(Demandante obj, int index) {
-        Usuario idusuarioDem = null;
-        obj.setIdusuarioDem(idusuarioDem);
     }
     
     public void DemandanteDataOnDemand.setNombre(Demandante obj, int index) {

@@ -7,8 +7,8 @@ import es.uca.iw.domain.FormacionDataOnDemand;
 import es.uca.iw.domain.InscripcionDataOnDemand;
 import es.uca.iw.domain.Oferta;
 import es.uca.iw.domain.OfertaDataOnDemand;
-import es.uca.iw.domain.Puesto;
-import es.uca.iw.domain.Sede;
+import es.uca.iw.domain.PuestoDataOnDemand;
+import es.uca.iw.domain.SedeDataOnDemand;
 import es.uca.iw.reference.EstadoOfer;
 import es.uca.iw.reference.TipoContrato;
 import java.security.SecureRandom;
@@ -38,14 +38,18 @@ privileged aspect OfertaDataOnDemand_Roo_DataOnDemand {
     @Autowired
     InscripcionDataOnDemand OfertaDataOnDemand.inscripcionDataOnDemand;
     
+    @Autowired
+    PuestoDataOnDemand OfertaDataOnDemand.puestoDataOnDemand;
+    
+    @Autowired
+    SedeDataOnDemand OfertaDataOnDemand.sedeDataOnDemand;
+    
     public Oferta OfertaDataOnDemand.getNewTransientOferta(int index) {
         Oferta obj = new Oferta();
         setEstado(obj, index);
         setFecFinOferta(obj, index);
         setFecIniOferta(obj, index);
         setFechaInc(obj, index);
-        setIdPuestoOferta(obj, index);
-        setIdSedeOferta(obj, index);
         setInfoPuesto(obj, index);
         setNumVac(obj, index);
         setPerfilDem(obj, index);
@@ -73,16 +77,6 @@ privileged aspect OfertaDataOnDemand_Roo_DataOnDemand {
     public void OfertaDataOnDemand.setFechaInc(Oferta obj, int index) {
         Date fechaInc = new GregorianCalendar(Calendar.getInstance().get(Calendar.YEAR), Calendar.getInstance().get(Calendar.MONTH), Calendar.getInstance().get(Calendar.DAY_OF_MONTH), Calendar.getInstance().get(Calendar.HOUR_OF_DAY), Calendar.getInstance().get(Calendar.MINUTE), Calendar.getInstance().get(Calendar.SECOND) + new Double(Math.random() * 1000).intValue()).getTime();
         obj.setFechaInc(fechaInc);
-    }
-    
-    public void OfertaDataOnDemand.setIdPuestoOferta(Oferta obj, int index) {
-        Puesto idPuestoOferta = null;
-        obj.setIdPuestoOferta(idPuestoOferta);
-    }
-    
-    public void OfertaDataOnDemand.setIdSedeOferta(Oferta obj, int index) {
-        Sede idSedeOferta = null;
-        obj.setIdSedeOferta(idSedeOferta);
     }
     
     public void OfertaDataOnDemand.setInfoPuesto(Oferta obj, int index) {

@@ -6,7 +6,7 @@ package es.uca.iw.domain;
 import es.uca.iw.domain.DemandanteDataOnDemand;
 import es.uca.iw.domain.Experiencia;
 import es.uca.iw.domain.ExperienciaDataOnDemand;
-import es.uca.iw.domain.Puesto;
+import es.uca.iw.domain.PuestoDataOnDemand;
 import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -31,11 +31,13 @@ privileged aspect ExperienciaDataOnDemand_Roo_DataOnDemand {
     @Autowired
     DemandanteDataOnDemand ExperienciaDataOnDemand.demandanteDataOnDemand;
     
+    @Autowired
+    PuestoDataOnDemand ExperienciaDataOnDemand.puestoDataOnDemand;
+    
     public Experiencia ExperienciaDataOnDemand.getNewTransientExperiencia(int index) {
         Experiencia obj = new Experiencia();
         setFecfin(obj, index);
         setFecini(obj, index);
-        setIdPuestoExperiencia(obj, index);
         setSalario(obj, index);
         setTareas(obj, index);
         return obj;
@@ -49,11 +51,6 @@ privileged aspect ExperienciaDataOnDemand_Roo_DataOnDemand {
     public void ExperienciaDataOnDemand.setFecini(Experiencia obj, int index) {
         Date fecini = new GregorianCalendar(Calendar.getInstance().get(Calendar.YEAR), Calendar.getInstance().get(Calendar.MONTH), Calendar.getInstance().get(Calendar.DAY_OF_MONTH), Calendar.getInstance().get(Calendar.HOUR_OF_DAY), Calendar.getInstance().get(Calendar.MINUTE), Calendar.getInstance().get(Calendar.SECOND) + new Double(Math.random() * 1000).intValue()).getTime();
         obj.setFecini(fecini);
-    }
-    
-    public void ExperienciaDataOnDemand.setIdPuestoExperiencia(Experiencia obj, int index) {
-        Puesto idPuestoExperiencia = null;
-        obj.setIdPuestoExperiencia(idPuestoExperiencia);
     }
     
     public void ExperienciaDataOnDemand.setSalario(Experiencia obj, int index) {
