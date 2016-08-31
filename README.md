@@ -13,7 +13,7 @@ Este es el planteamiento y el principio de un proyecto al que hemos denominado �
 #2.	Miembros del proyecto y clientes
 Los miembros que llevarán a cabo este proyecto son:
 * José Antonio Adriano
-*	Gonzalo Lamas Quintero
+* Gonzalo Lamas Quintero
 
 Los usuarios/clientes de este proyecto serán:
 * Profesor don Juan Manuel Dodero Beardo.
@@ -25,13 +25,13 @@ Los miembros del proyecto “FaceJobs”, Gonzalo Lamas y José Antonio Adriano,
 ##Roles\Miembros
 * José Antonio Adriano
   * Jefe de Proyecto
-  * Administrador de Sistemas	
-  * Pruebas	
+  * Arquitecto Software		
   * Administrador de BBDD	
+  * Administrador de Sistemas	
 
 *Gonzalo Lamas Quintero
-  * Arquitecto Software		
   * Diseñador Interfaz de Usuario
+  * Pruebas	
   * Evaluador
 
 #4.	Planificación
