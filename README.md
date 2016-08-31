@@ -50,3 +50,27 @@ En esta sección pasamos a detallar todas las herramientas que vamos a utilizar 
 *	GoogleDrive. Es la plataforma para desarrollo de documentos de texto que será utilizada, tanto como para realizar los documentos, como para hacerlos públicos.
 
 Para el desarrollo de la aplicación web serán utilizadas todas las tecnologías aquí mencionadas. Pero hay que decir que para poder desplegar la aplicación no serán necesarias todas, ya que cada una cumple una función en concreto. Los datos sobre el uso de la aplicación vendrán reflejados en el documento de implantación.
+
+#6. Instalación
+
+Para instalar el software necesario, ejecutamos en nuestra línea de comandos la siguiente orden:
+`sudo apt-get install -y git mysql-client mysql-server  openjdk-7-jre openjdk-7-jdk tomcat7 maven2`
+
+Si nos lo pide, introducimos nuestra contraseña de Super Usuario del sistema.
+
+#7. Instalación y despliegue del sistema
+
+Para poder instalar satisfactoriamente la aplicación web tendremos que ejecutar las siguientes órdenes:
+`git clone https://github.com/IngenieriaWebUCA/iw2016-facejobs.git`
+
+`cd iw2016-facejobs`
+
+`sudo chmod 777 ./config.sh`
+
+`./config.sh`
+
+Al ejecutar el script (.sh) y una vez termine la configuración sobre la Base de Datos, se iniciará otro script denominado “inicio.sh” desde el cual se lanza la aplicación web en el puerto 8080.
+
+Ejecutamos el script de inicio (inicio.sh).
+
+Ya puedes utilizar nuestro sistema en tu navegador.
