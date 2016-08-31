@@ -65,9 +65,9 @@ Para poder instalar satisfactoriamente la aplicación web tendremos que ejecutar
 
 `cd iw2016-facejobs`
 
-`sudo chmod 777 ./config.sh`
+`sudo chmod 777 ./facejobs.sh`
 
-`./config.sh`
+`./facejobs.sh`
 
 Al ejecutar el script (.sh) y una vez termine la configuración sobre la Base de Datos, se iniciará otro script denominado “inicio.sh” desde el cual se lanza la aplicación web en el puerto 8080.
 
