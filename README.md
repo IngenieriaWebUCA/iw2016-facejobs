@@ -30,8 +30,7 @@ Los miembros del proyecto “FaceJobs”, Gonzalo Lamas y José Antonio Adriano,
 
 *Gonzalo Lamas Quintero
   * Arquitecto Software		
-  * Diseñador Interfaz de Usuario	
-  * Administrador de Sistemas
+  * Diseñador Interfaz de Usuario
   * Evaluador
 
 #4.	Planificación
