@@ -69,8 +69,6 @@ Para poder instalar satisfactoriamente la aplicación web tendremos que ejecutar
 
 `./facejobs.sh`
 
-Al ejecutar el script (.sh) y una vez termine la configuración sobre la Base de Datos, se iniciará otro script denominado “inicio.sh” desde el cual se lanza la aplicación web en el puerto 8080.
-
-Ejecutamos el script de inicio (inicio.sh).
+Al ejecutar el script (.sh) y una vez termine la configuración sobre la Base de Datos, se iniciará otro script denominado “facejobs.sh” desde el cual se lanza la aplicación web en el puerto 8080.
 
 Ya puedes utilizar nuestro sistema en tu navegador.
