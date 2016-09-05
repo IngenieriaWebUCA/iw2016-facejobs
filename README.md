@@ -29,7 +29,7 @@ Los miembros del proyecto “FaceJobs”, Gonzalo Lamas y José Antonio Adriano,
   * Administrador de BBDD	
   * Administrador de Sistemas	
 
-*Gonzalo Lamas Quintero
+* Gonzalo Lamas Quintero
   * Diseñador Interfaz de Usuario
   * Pruebas	
   * Evaluador
