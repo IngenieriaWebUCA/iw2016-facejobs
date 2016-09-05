@@ -14,7 +14,7 @@ CREATE DATABASE IF NOT EXISTS `facejobs`;
 use `facejobs`;
 
 -- 
--- Base de datos: `facejobs`
+-- Base de datos:  `facejobs`
 -- 
 
 -- --------------------------------------------------------
