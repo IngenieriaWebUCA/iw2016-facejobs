@@ -35,9 +35,12 @@ Los miembros del proyecto “FaceJobs”, Gonzalo Lamas y José Antonio Adriano,
   * Evaluador
 
 #4.	Planificación
-El método que se seguirá para la realización del proyecto es un método ágil. Concretamente seguiremos el método SCRUM, en el que se marcan unos objetivos (hitos) y se planifican unos plazos o etapas (sprint) para uno o varios hitos. En estos sprint o etapas realizamos las tareas necesarias para finalizar el proyecto de la manera más ágil, eficiente y correcta posible. En nuestro caso, al tener solo 2 meses para realizar un trabajo de una duración aproximada de 4 meses, realizamos sprints más intensivos de lo normal, quedando la planificación de la siguiente manera:
+El método que se seguirá para la realización del proyecto es un método ágil. Concretamente seguiremos el método SCRUM, en el que se marcan unos objetivos (hitos) y se planifican unos plazos o etapas (sprint) para uno o varios hitos. En estos sprint o etapas realizamos las tareas necesarias para finalizar el proyecto de la manera más ágil, eficiente y correcta posible. En nuestro caso, al tener solo 2 meses para realizar un trabajo de una duración aproximada de 4 meses, realizamos sprints más intensivos de lo normal.
  
-#5.	Herramientas a utilizar
+#5. Actas de Reunión
+Para poder ver las actas de todas nuestras reuniones, haz click en https://github.com/IngenieriaWebUCA/iw2016-facejobs/wiki/Actas-de-reuni%C3%B3n
+
+#6.	Herramientas a utilizar
 En esta sección pasamos a detallar todas las herramientas que vamos a utilizar para producir y elaborar nuestro proyecto.
 *	Spring Tool Site. Entorno de desarrollo software basado en Eclipse, incluyendo extensiones que nos facilitarán la programación y unificación del proyecto.
 *	Apache Maven. Herramienta, que configurada en Spring Tool Site (STS) nos permitirá una mejor gestión de los paquetes en java y del proyecto en general.
@@ -52,14 +55,14 @@ En esta sección pasamos a detallar todas las herramientas que vamos a utilizar 
 
 Para el desarrollo de la aplicación web serán utilizadas todas las tecnologías aquí mencionadas. Pero hay que decir que para poder desplegar la aplicación no serán necesarias todas, ya que cada una cumple una función en concreto. Los datos sobre el uso de la aplicación vendrán reflejados en el documento de implantación.
 
-#6. Instalación
+#7. Instalación
 
 Para instalar el software necesario, ejecutamos en nuestra línea de comandos la siguiente orden:
 `sudo apt-get install -y git mysql-client mysql-server  openjdk-7-jre openjdk-7-jdk tomcat7 maven2`
 
 Si nos lo pide, introducimos nuestra contraseña de Super Usuario del sistema.
 
-#7. Instalación y despliegue del sistema
+#8. Instalación y despliegue del sistema
 
 Para poder instalar satisfactoriamente la aplicación web tendremos que ejecutar las siguientes órdenes:
 `git clone https://github.com/IngenieriaWebUCA/iw2016-facejobs.git`
